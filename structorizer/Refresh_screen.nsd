@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.31-04" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" namespace="" author="alyvasseur" created="2023-10-02" changedby="alyvasseur" changed="2023-10-02" origin="Structorizer 3.31-04" text="&#34;Refresh screen (*canevas canevas)&#34;" comment="&#34;&#34;" color="ffffff" type="includable" style="nice">
+	<children>
+		<for text="&#34;for c &#60;- 0 to 18&#34;" comment="&#34;&#34;" counterVar="c" startValue="0" endValue="18" stepConst="1" style="COUNTER" color="ffffff" disabled="0">
+			<qFor>
+				<for text="&#34;for l &#60;- 0 to 4&#34;" comment="&#34;&#34;" counterVar="l" startValue="0" endValue="4" stepConst="1" style="COUNTER" color="ffffff" disabled="0">
+					<qFor>
+						<for text="&#34;for i &#60;- 0 to 7&#34;" comment="&#34;&#34;" counterVar="i" startValue="0" endValue="7" stepConst="1" style="COUNTER" color="ffffff" disabled="0">
+							<qFor>
+								<call text="&#34;Envoyer bit(&amp;canevas[c][l].G[i])&#34;" comment="&#34;&#34;" color="ffffff" disabled="0" ismethoddecl="0"></call>
+								<call text="&#34;Envoyer bit(&amp;canevas[c][l].R[i])&#34;" comment="&#34;&#34;" color="ffffff" disabled="0" ismethoddecl="0"></call>
+								<call text="&#34;Envoyer bit(&amp;canevas[c][l].B[i])&#34;" comment="&#34;&#34;" color="ffffff" disabled="0" ismethoddecl="0"></call>
+							</qFor>
+						</for>
+					</qFor>
+				</for>
+			</qFor>
+		</for>
+	</children>
+</root>

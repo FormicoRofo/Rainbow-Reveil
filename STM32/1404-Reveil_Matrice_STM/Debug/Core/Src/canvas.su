@@ -1,0 +1,4 @@
+../Core/Src/canvas.c:9:6:setCanvasColor	32	static
+../Core/Src/canvas.c:18:6:sendCanvas	40	static
+../Core/Src/canvas.c:25:8:getPixel	24	static
+../Core/Src/canvas.c:34:6:colorDiagonal	40	static

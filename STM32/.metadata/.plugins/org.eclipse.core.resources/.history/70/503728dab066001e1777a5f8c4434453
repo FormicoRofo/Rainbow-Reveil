@@ -1,0 +1,34 @@
+/*
+ * canvas.c
+ *
+ *  Created on: 9 oct. 2023
+ *      Author: alyvasseur
+ */
+#include "canvas.h" // Supposons que vous avez un fichier canvas.h pour définir les structures Canvas et Pixel
+#include "ws2812.h"
+
+void setCanvasColor(Canvas* canvas, Pixel encre) {
+for (uint16_t i = 0; i < canvas->numCols * canvas->numRows; i++) {
+		canvas->pixels[i]=encre;
+    }
+}
+
+
+
+// Fonction pour mettre à jour l'affichage LED
+void sendCanvas(Canvas* canvas) {
+    // Copiez les pixels du canevas vers l'écran LED
+    for (uint16_t i = 0; i < canvas->numCols * canvas->numRows; i++) {
+        Pixel pixel = canvas -> pixels[x * canvas->numRows + y];
+        setLEDcolor(y + x*canvas->numRows, pixel.R, pixel.G, pixel.B);
+    }
+}
+
+Pixel* getPixel(Canvas* canvas, int x, int y) {
+    if (x > 0 && x <= canvas->numCols && y > 0 && y <= canvas->numRows) {
+        return &canvas->pixels[(x-1)*canvas->numRows+(y-1)];
+    } else {
+        return NULL; // Coordonnées hors limites
+    }
+}
+//

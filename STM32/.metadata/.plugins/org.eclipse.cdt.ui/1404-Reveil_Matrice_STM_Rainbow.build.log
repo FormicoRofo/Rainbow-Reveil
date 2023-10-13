@@ -1,0 +1,10 @@
+14:22:12 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM_Rainbow ****
+make -j16 all 
+arm-none-eabi-size   1404-Reveil_Matrice_STM_Rainbow.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25528	     20	   4748	  30296	   7658	1404-Reveil_Matrice_STM_Rainbow.elf
+Finished building: default.size.stdout
+ 
+
+14:22:13 Build Finished. 0 errors, 0 warnings. (took 390ms)
+

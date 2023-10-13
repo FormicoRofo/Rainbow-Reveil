@@ -1,0 +1,274 @@
+10:01:19 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I../Core/Inc -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Src" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:136:21: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  136 |   myCanvas.pixels = malloc(sizeof(Pixel) * NUM_COLS * NUM_ROWS);
+      |                     ^~~~~~
+../Core/Src/main.c:136:21: warning: incompatible implicit declaration of built-in function 'malloc'
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include "main.h"
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:138:3: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  138 |   memset(myCanvas.pixels, 0, sizeof(Pixel) * NUM_COLS * NUM_ROWS);
+      |   ^~~~~~
+../Core/Src/main.c:138:3: warning: incompatible implicit declaration of built-in function 'memset'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memset'
+   21 | #include "main.h"
+  +++ |+#include <string.h>
+   22 | 
+../Core/Src/main.c:221:4: warning: "/*" within comment [-Wcomment]
+  221 |    /**********Caractère Minute Dizaine***************/
+      |     
+../Core/Src/main.c:266:4: warning: "/*" within comment [-Wcomment]
+  266 |    /**********Caractère Heure Unité***************/
+      |     
+../Core/Src/main.c:311:2: warning: "/*" within comment [-Wcomment]
+  311 |  /**********Caractère Heure Dizaine***************/
+      |   
+../Core/Src/main.c:358:4: warning: "/*" within comment [-Wcomment]
+  358 |    /******************************/
+      |     
+../Core/Src/main.c:129:9: warning: unused variable 'backgroundColor' [-Wunused-variable]
+  129 |   Pixel backgroundColor=(Pixel){0,0,0};
+      |         ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\affichage reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1404-Reveil_Matrice_STM.elf
+ 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+arm-none-eabi-objdump -h -S  1404-Reveil_Matrice_STM.elf  > "1404-Reveil_Matrice_STM.list"
+   text	   data	    bss	    dec	    hex	filename
+  22400	    120	   4752	  27272	   6a88	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1404-Reveil_Matrice_STM.list
+ 
+10:01:23 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22400	    120	   4752	  27272	   6a88	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+10:02:14 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I../Core/Inc -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Src" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:136:21: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  136 |   myCanvas.pixels = malloc(sizeof(Pixel) * NUM_COLS * NUM_ROWS);
+      |                     ^~~~~~
+../Core/Src/main.c:136:21: warning: incompatible implicit declaration of built-in function 'malloc'
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include "main.h"
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:138:3: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  138 |   memset(myCanvas.pixels, 0, sizeof(Pixel) * NUM_COLS * NUM_ROWS);
+      |   ^~~~~~
+../Core/Src/main.c:138:3: warning: incompatible implicit declaration of built-in function 'memset'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memset'
+   21 | #include "main.h"
+  +++ |+#include <string.h>
+   22 | 
+../Core/Src/main.c:221:4: warning: "/*" within comment [-Wcomment]
+  221 |    /**********Caractère Minute Dizaine***************/
+      |     
+../Core/Src/main.c:266:4: warning: "/*" within comment [-Wcomment]
+  266 |    /**********Caractère Heure Unité***************/
+      |     
+../Core/Src/main.c:311:2: warning: "/*" within comment [-Wcomment]
+  311 |  /**********Caractère Heure Dizaine***************/
+      |   
+../Core/Src/main.c:358:4: warning: "/*" within comment [-Wcomment]
+  358 |    /******************************/
+      |     
+../Core/Src/main.c:129:9: warning: unused variable 'backgroundColor' [-Wunused-variable]
+  129 |   Pixel backgroundColor=(Pixel){0,0,0};
+      |         ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\affichage reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1404-Reveil_Matrice_STM.elf
+ 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+arm-none-eabi-objdump -h -S  1404-Reveil_Matrice_STM.elf  > "1404-Reveil_Matrice_STM.list"
+   text	   data	    bss	    dec	    hex	filename
+  22420	    120	   4752	  27292	   6a9c	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1404-Reveil_Matrice_STM.list
+ 
+10:03:50 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I../Core/Inc -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Src" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:136:21: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  136 |   myCanvas.pixels = malloc(sizeof(Pixel) * NUM_COLS * NUM_ROWS);
+      |                     ^~~~~~
+../Core/Src/main.c:136:21: warning: incompatible implicit declaration of built-in function 'malloc'
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include "main.h"
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:138:3: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  138 |   memset(myCanvas.pixels, 0, sizeof(Pixel) * NUM_COLS * NUM_ROWS);
+      |   ^~~~~~
+../Core/Src/main.c:138:3: warning: incompatible implicit declaration of built-in function 'memset'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memset'
+   21 | #include "main.h"
+  +++ |+#include <string.h>
+   22 | 
+../Core/Src/main.c:221:4: warning: "/*" within comment [-Wcomment]
+  221 |    /**********Caractère Minute Dizaine***************/
+      |     
+../Core/Src/main.c:266:4: warning: "/*" within comment [-Wcomment]
+  266 |    /**********Caractère Heure Unité***************/
+      |     
+../Core/Src/main.c:311:2: warning: "/*" within comment [-Wcomment]
+  311 |  /**********Caractère Heure Dizaine***************/
+      |   
+../Core/Src/main.c:358:4: warning: "/*" within comment [-Wcomment]
+  358 |    /******************************/
+      |     
+../Core/Src/main.c:129:9: warning: unused variable 'backgroundColor' [-Wunused-variable]
+  129 |   Pixel backgroundColor=(Pixel){0,0,0};
+      |         ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\affichage reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1404-Reveil_Matrice_STM.elf
+ 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+arm-none-eabi-objdump -h -S  1404-Reveil_Matrice_STM.elf  > "1404-Reveil_Matrice_STM.list"
+   text	   data	    bss	    dec	    hex	filename
+  22420	    120	   4752	  27292	   6a9c	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1404-Reveil_Matrice_STM.list
+ 
+10:05:17 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I../Core/Inc -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Src" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:136:21: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  136 |   myCanvas.pixels = malloc(sizeof(Pixel) * NUM_COLS * NUM_ROWS);
+      |                     ^~~~~~
+../Core/Src/main.c:136:21: warning: incompatible implicit declaration of built-in function 'malloc'
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include "main.h"
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:138:3: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  138 |   memset(myCanvas.pixels, 0, sizeof(Pixel) * NUM_COLS * NUM_ROWS);
+      |   ^~~~~~
+../Core/Src/main.c:138:3: warning: incompatible implicit declaration of built-in function 'memset'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memset'
+   21 | #include "main.h"
+  +++ |+#include <string.h>
+   22 | 
+../Core/Src/main.c:221:4: warning: "/*" within comment [-Wcomment]
+  221 |    /**********Caractère Minute Dizaine***************/
+      |     
+../Core/Src/main.c:266:4: warning: "/*" within comment [-Wcomment]
+  266 |    /**********Caractère Heure Unité***************/
+      |     
+../Core/Src/main.c:311:2: warning: "/*" within comment [-Wcomment]
+  311 |  /**********Caractère Heure Dizaine***************/
+      |   
+../Core/Src/main.c:358:4: warning: "/*" within comment [-Wcomment]
+  358 |    /******************************/
+      |     
+../Core/Src/main.c:129:9: warning: unused variable 'backgroundColor' [-Wunused-variable]
+  129 |   Pixel backgroundColor=(Pixel){0,0,0};
+      |         ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\affichage reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1404-Reveil_Matrice_STM.elf
+ 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+arm-none-eabi-objdump -h -S  1404-Reveil_Matrice_STM.elf  > "1404-Reveil_Matrice_STM.list"
+   text	   data	    bss	    dec	    hex	filename
+  22420	    120	   4752	  27292	   6a9c	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1404-Reveil_Matrice_STM.list
+ 
+10:07:49 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I../Core/Inc -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Src" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:136:21: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  136 |   myCanvas.pixels = malloc(sizeof(Pixel) * NUM_COLS * NUM_ROWS);
+      |                     ^~~~~~
+../Core/Src/main.c:136:21: warning: incompatible implicit declaration of built-in function 'malloc'
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include "main.h"
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:138:3: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  138 |   memset(myCanvas.pixels, 0, sizeof(Pixel) * NUM_COLS * NUM_ROWS);
+      |   ^~~~~~
+../Core/Src/main.c:138:3: warning: incompatible implicit declaration of built-in function 'memset'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memset'
+   21 | #include "main.h"
+  +++ |+#include <string.h>
+   22 | 
+../Core/Src/main.c:221:4: warning: "/*" within comment [-Wcomment]
+  221 |    /**********Caractère Minute Dizaine***************/
+      |     
+../Core/Src/main.c:129:9: warning: unused variable 'backgroundColor' [-Wunused-variable]
+  129 |   Pixel backgroundColor=(Pixel){0,0,0};
+      |         ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\affichage reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1404-Reveil_Matrice_STM.elf
+ 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+arm-none-eabi-objdump -h -S  1404-Reveil_Matrice_STM.elf  > "1404-Reveil_Matrice_STM.list"
+   text	   data	    bss	    dec	    hex	filename
+  27352	    120	   4768	  32240	   7df0	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1404-Reveil_Matrice_STM.list
+ 
+10:08:22 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I../Core/Inc -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Src" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:136:21: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  136 |   myCanvas.pixels = malloc(sizeof(Pixel) * NUM_COLS * NUM_ROWS);
+      |                     ^~~~~~
+../Core/Src/main.c:136:21: warning: incompatible implicit declaration of built-in function 'malloc'
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include "main.h"
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:138:3: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+  138 |   memset(myCanvas.pixels, 0, sizeof(Pixel) * NUM_COLS * NUM_ROWS);
+      |   ^~~~~~
+../Core/Src/main.c:138:3: warning: incompatible implicit declaration of built-in function 'memset'
+../Core/Src/main.c:22:1: note: include '<string.h>' or provide a declaration of 'memset'
+   21 | #include "main.h"
+  +++ |+#include <string.h>
+   22 | 
+../Core/Src/main.c:221:4: warning: "/*" within comment [-Wcomment]
+  221 |    /**********Caractère Minute Dizaine***************/
+      |     
+../Core/Src/main.c:266:4: warning: "/*" within comment [-Wcomment]
+  266 |    /**********Caractère Heure Unité***************/
+      |     
+../Core/Src/main.c:311:2: warning: "/*" within comment [-Wcomment]
+  311 |  /**********Caractère Heure Dizaine***************/
+      |   
+../Core/Src/main.c:358:4: warning: "/*" within comment [-Wcomment]
+  358 |    /******************************/
+      |     
+../Core/Src/main.c:129:9: warning: unused variable 'backgroundColor' [-Wunused-variable]
+  129 |   Pixel backgroundColor=(Pixel){0,0,0};
+      |         ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\affichage reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1404-Reveil_Matrice_STM.elf
+ 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+arm-none-eabi-objdump -h -S  1404-Reveil_Matrice_STM.elf  > "1404-Reveil_Matrice_STM.list"
+   text	   data	    bss	    dec	    hex	filename
+  22420	    120	   4752	  27292	   6a9c	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1404-Reveil_Matrice_STM.list
+ 
