@@ -246,7 +246,7 @@ J'ai donc rapidement écrit ce code (il n'est pas au propre):
 ```
 Le résultat est ce magnifique arc-en-ciel :
 
-![Arc-en-ciel sur affichage](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnV6eWJrYzBoaTFpaW5sMGg0NnJ2OTBubjJ0NG9qODIzendkdHNocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l23VptCoHRJoeuOMFn/giphy.gif)
+![Arc-en-ciel sur affichage](https://i.ibb.co/S7Qs9dx/giphy.gif)
 
 #### Prochaines étapes :
 - La LED 0 présente un comportement étrange. Il faudrait investiguer ce qui est probablement une erreur dans la bibliothèque ws2812
@@ -279,5 +279,6 @@ Le résultat est ce magnifique arc-en-ciel :
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwODc3NDc1MSwzODM2NDMxMjddfQ==
+eyJoaXN0b3J5IjpbMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4Mz
+Y0MzEyN119
 -->
