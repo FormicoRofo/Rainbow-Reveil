@@ -1,0 +1,17 @@
+main.c:367:6:SystemClock_Config	4
+main.c:95:5:main	12
+main.c:625:6:HAL_UART_RxCpltCallback	3
+main.c:662:6:HAL_UART_ErrorCallback	2
+main.c:683:6:LEDs_L_C_RGB	1
+main.c:714:6:Chara_0	5
+main.c:780:6:Chara_1	5
+main.c:842:6:Chara_2	5
+main.c:904:6:Chara_3	5
+main.c:966:6:Chara_4	5
+main.c:1028:6:Chara_5	5
+main.c:1090:6:Chara_6	5
+main.c:1152:6:Chara_7	5
+main.c:1214:6:Chara_8	5
+main.c:1276:6:Chara_9	5
+main.c:1334:6:Clignotement1S	3
+main.c:1372:6:Error_Handler	1

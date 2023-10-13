@@ -126,7 +126,6 @@ int main(void)
   HAL_ADC_Start(&hadc);
 
   uint8_t H =0;
-  Pixel backgroundColor=(Pixel){0,0,0};
   // Déclarez une instance de Canvas
   Canvas myCanvas;
   // Initialisez la structure Canvas

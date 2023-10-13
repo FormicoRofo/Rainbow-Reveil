@@ -9,9 +9,12 @@
 #define INC_INCLUDES_H_
 
 #include "defines.h"
+#include "main.h"
 #include "canvas.h"
 #include "color.h"
-#include "main.h"
 #include "ws2812.h"
+
+#include <stdlib.h>
+#include <string.h>
 
 #endif /* INC_INCLUDES_H_ */

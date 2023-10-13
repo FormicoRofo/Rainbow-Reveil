@@ -2,7 +2,7 @@
 #define __ws2812_H__
 
 #include "stm32f0xx_hal.h"
-#include "defines.h"
+#include "includes.h"
 
 //WS2812
 #define WS2812_FREQ							(800000) // it is fixed: WS2812 require 800kHz

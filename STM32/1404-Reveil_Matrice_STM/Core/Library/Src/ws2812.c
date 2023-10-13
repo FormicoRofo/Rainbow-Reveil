@@ -1,4 +1,4 @@
-#include "ws2812.h"
+#include "includes.h"
 
 /* Variables -----------------------------------------------*/
 static uint8_t LEDbuffer[LED_BUFFER_SIZE];
