@@ -1,9 +1,7 @@
 # Journal de développement réveil 
 ## Design général
-L'objectif est de créer un affichage à fond arc-en-ciel flou (pas de palette prédéfinie) défilante diagonale, pour donner une esthétique similaire aux périphériques RGB.
-
-![Clavier arc-en-ciel](https://media.tenor.com/9Gp-SBjrjj4AAAAC/rgb-keyboard-neon-lights.gif)
-
+L'objectif est de créer un affichage à fond arc-en-ciel flou (pas de palette prédéfinie) défilante diagonale, pour donner une esthétique similaire aux périphériques RGB.  
+![Clavier arc-en-ciel](https://media.tenor.com/9Gp-SBjrjj4AAAAC/rgb-keyboard-neon-lights.gif)   
 Ensuite, sur ce fond arc-en-ciel, l'idée est d'afficher l'heure de manière assez standard, soit en noir, soit en blanc, selon ce qui se voit le mieux et est le plus esthétique.
 ## Structure générale
 ```mermaid
@@ -281,5 +279,5 @@ Le résultat est ce magnifique arc-en-ciel :
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgzNjQzMTI3XX0=
+eyJoaXN0b3J5IjpbLTUwODc3NDc1MSwzODM2NDMxMjddfQ==
 -->
