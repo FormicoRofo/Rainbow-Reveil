@@ -254,10 +254,6 @@ Le résultat est ce magnifique arc-en-ciel :
 
 
 
-Modification pour la démo
-
-
-
 
 
 
@@ -283,6 +279,6 @@ Modification pour la démo
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MDIwMjUwOSwxMTQ0NTU1MTkxLC01MD
-g3NzQ3NTEsMzgzNjQzMTI3XX0=
+eyJoaXN0b3J5IjpbMTE0NDU1NTE5MSwxNDcwMjAyNTA5LDExND
+Q1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMxMjddfQ==
 -->
