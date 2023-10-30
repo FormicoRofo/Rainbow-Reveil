@@ -256,7 +256,9 @@ Le résultat est ce magnifique arc-en-ciel :
 ### Journal de Développement - 30.10.2023
 Les vacances sont finies ! On continue le projet. Pour bien se remettre dans le bain, j'ai aujourd'hui étoffé la bibliothèque de fonctions permettant de manipuler le canevas avec des fonctions supplémentaires. Elles ne sont pas toutes utiles pour créer l'affichage que j'ai prévu initialement, mais elles permettent une plus grande adaptabilité si par la suite je veux programmer des jeux, d'autres affichages, ou aider des camarades.
 
-#### Fonction drawRect
+#### Fonction drawRectangle();
+J'ai implémenté cette fonction pour pouvoir dessiner un rectangle sur le canvas.
+En entrée elle prend évidemment un pointeur vers le canvas, mais également une paire de coordonée, ainsi que des dimmensions hauteurs et largeur. Pour la colloration, 
 
 
 
@@ -282,7 +284,7 @@ Les vacances sont finies ! On continue le projet. Pour bien se remettre dans le 
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzA5ODI1OTgsMTE0NDU1NTE5MSwxND
+eyJoaXN0b3J5IjpbLTEyMDYzOTE1OTYsMTE0NDU1NTE5MSwxND
 cwMjAyNTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMx
 MjddfQ==
 -->
