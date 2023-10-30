@@ -326,7 +326,8 @@ void displayBCD(Canvas* canvas, int X, int Y, int BCD, int NbDeBitAffiches) {
 }
 ```
 
-
+#### drawImage();
+Sans doutes la fonction la plus polyvalente du lot, elle permet d'afficher une image sur le canvas à un endroit désiré. Il est également possible de placer une im
 
 
 
@@ -349,7 +350,7 @@ void displayBCD(Canvas* canvas, int X, int Y, int BCD, int NbDeBitAffiches) {
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MzMwOTI4MCwxMTQ0NTU1MTkxLDE0Nz
+eyJoaXN0b3J5IjpbMTg4NTE1NTc5NywxMTQ0NTU1MTkxLDE0Nz
 AyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEy
 N119
 -->
