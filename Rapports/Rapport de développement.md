@@ -258,7 +258,12 @@ Les vacances sont finies ! On continue le projet. Pour bien se remettre dans le 
 
 #### Fonction drawRectangle();
 J'ai implémenté cette fonction pour pouvoir dessiner un rectangle sur le canvas.
-En entrée elle prend évidemment un pointeur vers le canvas, mais également une paire de coordonée, ainsi que des dimmensions hauteurs et largeur. Pour la coloration, deux encres (au format pixel) sont demandées : une pour la bordure, une pour le remplissage. Il est à noter que vu que les valeurs RGB impaires sont "interdites" j'ai profité de rajouter une feature 
+En entrée elle prend évidemment un pointeur vers le canvas, mais également une paire de coordonée, ainsi que des dimmensions hauteurs et largeur. Pour la coloration, deux encres (au format pixel) sont demandées : une pour la bordure, une pour le remplissage. Il est à noter que vu que les valeurs RGB impaires sont "interdites" j'ai profité de rajouter une feature : Si l'encre de remplissage a la valeur ``0x01`` sur son canal rouge, le remplissage sera transparent.
+
+Voici le code complet de la fonction :
+
+``````
+    
 
 
 
@@ -284,7 +289,7 @@ En entrée elle prend évidemment un pointeur vers le canvas, mais également un
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODEzODE0NTYsMTE0NDU1NTE5MSwxND
-cwMjAyNTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMx
-MjddfQ==
+eyJoaXN0b3J5IjpbNDkxMjI4OTYsMTE0NDU1NTE5MSwxNDcwMj
+AyNTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMxMjdd
+fQ==
 -->
