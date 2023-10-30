@@ -262,9 +262,34 @@ En entrée elle prend évidemment un pointeur vers le canvas, mais également un
 
 Voici le code complet de la fonction :
 
-``````
-    
+```c
+// Fonction pour dessiner un rectangle
+void drawRectangle(Canvas* canvas, int W,int H, int X, int Y, Pixel BorderInk, Pixel FillInk) {
+    if (canvas == NULL || H <= 0 || W <= 0 || X < 0 || Y < 0) {
+        // Vérifiez les paramètres d'entrée valides
+        return;
+    }
 
+    int i, j;
+
+    for (i = Y; i < Y + H; i++) {
+        for (j = X; j < X + W; j++) {
+            if (i == Y || i == Y + H - 1 || j == X || j == X + W - 1) {
+                // Dessiner la bordure
+                    *getPixel(canvas,j,i) = BorderInk;
+            } else {
+                // Remplir l'intérieur du rectangle
+                if (FillInk.R != 1) {
+                	*getPixel(canvas,j,i) = FillInk;
+                }
+            }
+        }
+    }
+}
+```
+    
+#### Fonction displayBCD
+Cette fonction est un peu moins configurable, car elle est prévue exclusivement à des fins de debug ou à la réalisation de mon affichage.
 
 
 
@@ -289,7 +314,7 @@ Voici le code complet de la fonction :
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkxMjI4OTYsMTE0NDU1NTE5MSwxNDcwMj
-AyNTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMxMjdd
-fQ==
+eyJoaXN0b3J5IjpbLTczMjczOTM3NCwxMTQ0NTU1MTkxLDE0Nz
+AyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEy
+N119
 -->
