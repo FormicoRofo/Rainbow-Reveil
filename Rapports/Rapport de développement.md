@@ -341,9 +341,47 @@ typedef struct {
 ```
 l'idéal aurait été de stocker ces images avec un tableau de Pixels, et un tableau d'alphas, mais pour s'éviter le labeur de fabriquer nos images pixel par pixel, j'ai préféré me pencher vers [la solution de LVGL](https://lvgl.io/tools/imageconverter) qui permet de convertir n'importe quel image PNG en tableau BGRA (Blue, Green, Red, Alpha) avec l'option CF_TRUE_COLOR_ALPHA.
 
-##### drawImage
-Ensuite, grâce à ce tableau, on peut relativement facilement afficher ladite image sur un canvas, avec nos paramètres ha
+##### drawImage();
+Ensuite, grâce à ce tableau, on peut relativement facilement afficher ladite image sur un canvas, avec nos paramètres habituels. Voici la fonction :
+```c
+void drawImage(ImageData* imageData, int x, int y, Canvas* canvas) {
+    if (imageData == NULL || canvas == NULL) {
+        // Gérez les cas d'erreur ou de paramètres non valides, si nécessaire
+        return;
+    }
 
+    for (int imgY = 0; imgY < imageData->height; imgY++) {
+        for (int imgX = 0; imgX < imageData->width; imgX++) {
+            uint8_t* pixel = &imageData->data[(imgY * imageData->width + imgX) * 4];  // BGRA format
+
+            // Ignore les pixels totalement transparents (canal alpha à zéro)
+            if (pixel[3] == 0x00) {
+                continue;
+            }
+
+            int canvasX = x + imgX;  // Coordonnée X sur le canevas
+            int canvasY = y + (imageData->height - 1) - imgY;  // Coordonnée Y sur le canevas
+
+            // Assurez-vous que les coordonnées se trouvent dans les limites du canevas
+            if (canvasX > 0 && canvasX <= canvas->numCols && canvasY > 0 && canvasY <= canvas->numRows) {
+                // Obtenez le pixel actuel du canevas en utilisant la fonction getPixel
+                Pixel* canvasPixel = getPixel(canvas, canvasX, canvasY);
+
+                // Appliquez la couleur de l'image avec la transparence sur le pixel du canevas
+                // Assurez-vous d'ajuster les canaux alpha en conséquence
+                canvasPixel->R = (pixel[2] * pixel[3] + canvasPixel->R * (255 - pixel[3])) / 255;
+                canvasPixel->G = (pixel[1] * pixel[3] + canvasPixel->G * (255 - pixel[3])) / 255;
+                canvasPixel->B = (pixel[0] * pixel[3] + canvasPixel->B * (255 - pixel[3])) / 255;
+                // Appliquer le masque pour forcer les valeurs à être paires
+                canvasPixel->R &= 0xFE; // Le masque 0xFE force le dernier bit à 0.
+                canvasPixel->G &= 0xFE;
+                canvasPixel->B &= 0xFE;
+
+            }
+        }
+    }
+}
+```
 
 
 
@@ -365,7 +403,7 @@ Ensuite, grâce à ce tableau, on peut relativement facilement afficher ladite i
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjMwNzg0OTQsMTk4NzY4NjI5NSwxMT
+eyJoaXN0b3J5IjpbLTE3MjA3ODY4NzIsMTk4NzY4NjI5NSwxMT
 Q0NTU1MTkxLDE0NzAyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0
 NzUxLDM4MzY0MzEyN119
 -->
