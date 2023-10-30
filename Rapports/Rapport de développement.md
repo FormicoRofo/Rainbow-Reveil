@@ -339,7 +339,7 @@ typedef struct {
     uint8_t* data;      // Tableau de données de l'image (RGBA ou autre)
 } ImageData;
 ```
-l'idéal aurait été de stocker ces images avec un tableau de Pixels, et un tableau d'a
+l'idéal aurait été de stocker ces images avec un tableau de Pixels, et un tableau d'alphas, mais pour s'éviter le labeur de fabriquer nos images pixel par pixel, j'ai préféré me pencher vers [la solution de LVGL]([Online image converter - BMP, JPG or PNG to C array or binary | LVGL](https://lvgl.io/tools/imageconverter))
 
 
 
@@ -362,7 +362,7 @@ l'idéal aurait été de stocker ces images avec un tableau de Pixels, et un tab
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMzY5NzQwNCwxMTQ0NTU1MTkxLDE0Nz
+eyJoaXN0b3J5IjpbLTUyMjE3NjMxNiwxMTQ0NTU1MTkxLDE0Nz
 AyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEy
 N119
 -->
