@@ -126,6 +126,7 @@ int main(void)
   HAL_ADC_Start(&hadc);
 
   uint8_t H =0;
+  ImageData* pacManSprite;
   // Déclarez une instance de Canvas
   Canvas myCanvas;
   // Initialisez la structure Canvas
@@ -163,9 +164,20 @@ int main(void)
 		  colorDiagonal(&myCanvas, HSVtoPixel((H + (diag* 255 / 23))%255 , MAX_LUX), diag);
 	  }
 
-	  drawRectangle(&myCanvas, 17, 3, 2, 2, (Pixel){0,0,MAX_LUX}, (Pixel){1,0,0});
+	  drawRectangle(&myCanvas, 19, 5, 1, 1, (Pixel){0,0,0}, (Pixel){0,0,0});
 
 	  displayBCD(&myCanvas, 8, 3, H>>4, 4);
+
+	  switch((H*6/100)%7){
+	  case 0 : pacManSprite = &pacMan0; break;
+	  case 1 : pacManSprite = &pacMan1; break;
+	  case 2 : pacManSprite = &pacMan2; break;
+	  case 3 : pacManSprite = &pacMan3; break;
+	  case 4 : pacManSprite = &pacMan2; break;
+	  case 5 : pacManSprite = &pacMan1; break;
+	  }
+	  drawImage(pacManSprite, -5 + (25*H)/255,1, &myCanvas);
+
 
 	  sendCanvas(&myCanvas);
 

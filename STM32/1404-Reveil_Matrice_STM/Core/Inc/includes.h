@@ -10,9 +10,11 @@
 
 #include "defines.h"
 #include "main.h"
+#include "image_data.h"
 #include "canvas.h"
 #include "color.h"
 #include "ws2812.h"
+
 
 #include <stdlib.h>
 #include <string.h>
