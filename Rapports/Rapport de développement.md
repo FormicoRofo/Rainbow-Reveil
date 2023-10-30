@@ -289,7 +289,7 @@ void drawRectangle(Canvas* canvas, int W,int H, int X, int Y, Pixel BorderInk, P
 ```
     
 #### Fonction displayBCD
-Cette fonction est un peu moins configurable, car elle est prévue exclusivement à des fins de debug ou à la réalisation de mon affichage.
+Cette fonction est un peu moins configurable, car elle est prévue exclusivement à des fins de debug ou à la réalisation de mon affichage. Elle permet d'afficher un certain nombre de bits sur l'écran, les 0 étant représentés par des pixels noirs, et les 1 par des pixels blancs. Les coordonnées du bit de poids fort sont également à fournir.
 
 
 
@@ -314,7 +314,7 @@ Cette fonction est un peu moins configurable, car elle est prévue exclusivement
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMjczOTM3NCwxMTQ0NTU1MTkxLDE0Nz
-AyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEy
-N119
+eyJoaXN0b3J5IjpbLTE2NTg2NzA5MTIsMTE0NDU1NTE5MSwxND
+cwMjAyNTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMx
+MjddfQ==
 -->
