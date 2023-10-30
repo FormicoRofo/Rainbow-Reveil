@@ -160,8 +160,13 @@ int main(void)
 	  /**********Background***************/
 
 	  for(uint8_t diag=1; diag<=23; diag++){
-		  colorDiagonal(&myCanvas, HSVtoPixel((H + (diag* 255 / 23))%255 ,255), diag);
+		  colorDiagonal(&myCanvas, HSVtoPixel((H + (diag* 255 / 23))%255 , MAX_LUX), diag);
 	  }
+
+	  drawRectangle(&myCanvas, 17, 3, 2, 2, (Pixel){0,0,MAX_LUX}, (Pixel){1,0,0});
+
+	  displayBCD(&myCanvas, 8, 3, H>>4, 4);
+
 	  sendCanvas(&myCanvas);
 
 	  if (H >= 255){

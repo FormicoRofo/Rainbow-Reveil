@@ -1,6 +1,0 @@
-ws2812.c:8:6:ws2812_start	1
-ws2812.c:17:6:ws2812_update	1
-ws2812.c:22:6:setLEDcolor	8
-ws2812.c:39:6:setWHOLEcolor	2
-ws2812.c:46:6:fillBufferBlack	4
-ws2812.c:67:6:fillBufferWhite	4

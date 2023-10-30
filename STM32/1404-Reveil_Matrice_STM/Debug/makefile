@@ -61,8 +61,8 @@ all: main-build
 main-build: 1404-Reveil_Matrice_STM.elf secondary-outputs
 
 # Tool invocations
-1404-Reveil_Matrice_STM.elf 1404-Reveil_Matrice_STM.map: $(OBJS) $(USER_OBJS) C:\Users\alyvasseur\Education\ Vaud\ETML_FLO-22-24_Teams\ -\ Vasseur\MicroControleur\affichage\ reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\affichage reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+1404-Reveil_Matrice_STM.elf 1404-Reveil_Matrice_STM.map: $(OBJS) $(USER_OBJS) C:\Users\alyvasseur\Education\ Vaud\ETML_FLO-22-24_Teams\ -\ Vasseur\MicroControleur\Rainbow-Reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\Rainbow-Reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
