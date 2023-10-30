@@ -339,7 +339,9 @@ typedef struct {
     uint8_t* data;      // Tableau de données de l'image (RGBA ou autre)
 } ImageData;
 ```
-l'idéal aurait été de stocker ces images avec un tableau de Pixels, et un tableau d'alphas, mais pour s'éviter le labeur de fabriquer nos images pixel par pixel, j'ai préféré me pencher vers [la solution de LVGL](https://lvgl.io/tools/imageconverter) qui permet de convertir n'importe quel image PNG en tableau BGRA (Blue, Green, Red, Alpha) 
+l'idéal aurait été de stocker ces images avec un tableau de Pixels, et un tableau d'alphas, mais pour s'éviter le labeur de fabriquer nos images pixel par pixel, j'ai préféré me pencher vers [la solution de LVGL](https://lvgl.io/tools/imageconverter) qui permet de convertir n'importe quel image PNG en tableau BGRA (Blue, Green, Red, Alpha) avec l'option CF_TRUE_COLOR_ALPHA.
+
+
 
 
 
@@ -362,7 +364,7 @@ l'idéal aurait été de stocker ces images avec un tableau de Pixels, et un tab
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA1MTMxNTEsMTE0NDU1NTE5MSwxNDcwMj
-AyNTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMxMjdd
-fQ==
+eyJoaXN0b3J5IjpbMTk4NzY4NjI5NSwxMTQ0NTU1MTkxLDE0Nz
+AyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEy
+N119
 -->
