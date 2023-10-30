@@ -330,8 +330,16 @@ void displayBCD(Canvas* canvas, int X, int Y, int BCD, int NbDeBitAffiches) {
 Sans doutes la fonction la plus polyvalente du lot, elle permet d'afficher une image sur le canvas à un endroit désiré. Il est également possible de placer une image que partiellement sur le canvas.
 
 ##### ImageData
-Un nouveau type de donnée entre dans le ring ! ImageData est un struct contennant tout ce qu'il faut pour une imag
+Un nouveau type de donnée entre dans le ring ! ImageData est un struct contenant tout ce qu'il faut pour une image : sa largeur, sa hauteur et ses donnés.
 
+```c
+typedef struct {
+    uint16_t width;     // Largeur de l'image
+    uint16_t height;    // Hauteur de l'image
+    uint8_t* data;      // Tableau de données de l'image (RGBA ou autre)
+} ImageData;
+```
+l'idéal aurait été de stocker ces images avec un tableau de Pixels, et un tableau d'a
 
 
 
@@ -354,7 +362,7 @@ Un nouveau type de donnée entre dans le ring ! ImageData est un struct contenna
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDA2MjU4NDksMTE0NDU1NTE5MSwxND
-cwMjAyNTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMx
-MjddfQ==
+eyJoaXN0b3J5IjpbLTYwMzY5NzQwNCwxMTQ0NTU1MTkxLDE0Nz
+AyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEy
+N119
 -->
