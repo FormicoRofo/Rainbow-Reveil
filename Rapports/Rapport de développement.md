@@ -253,7 +253,8 @@ Le résultat est ce magnifique arc-en-ciel :
 - Intégrer un système efficace et polyvalent de stockage et d'affichage de sprites.
 
 
-
+### Journal de Développement - 30.10.2023
+Les vacances sont finies ! On continue le projet. Pour bien se remettre dans le bain, j'ai aujourd'hui étoffé la bibliothèque de fonctions 
 
 
 
@@ -279,6 +280,7 @@ Le résultat est ce magnifique arc-en-ciel :
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NDU1NTE5MSwxNDcwMjAyNTA5LDExND
-Q1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMxMjddfQ==
+eyJoaXN0b3J5IjpbMTcxOTcyNjM0MywxMTQ0NTU1MTkxLDE0Nz
+AyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEy
+N119
 -->
