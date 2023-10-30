@@ -1,6 +1,0 @@
-../Core/Library/Src/ws2812.c:8:6:ws2812_start	8	static
-../Core/Library/Src/ws2812.c:17:6:ws2812_update	8	static
-../Core/Library/Src/ws2812.c:22:6:setLEDcolor	56	static
-../Core/Library/Src/ws2812.c:39:6:setWHOLEcolor	32	static
-../Core/Library/Src/ws2812.c:46:6:fillBufferBlack	16	static
-../Core/Library/Src/ws2812.c:67:6:fillBufferWhite	16	static

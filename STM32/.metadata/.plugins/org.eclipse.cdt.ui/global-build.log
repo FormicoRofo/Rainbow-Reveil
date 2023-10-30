@@ -1,31 +1,155 @@
-14:06:59 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+15:09:29 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
-arm-none-eabi-gcc "../Core/Library/Src/canvas.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Library/Src/canvas.d" -MT"Core/Library/Src/canvas.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Library/Src/canvas.o"
-arm-none-eabi-gcc "../Core/Library/Src/color.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Library/Src/color.d" -MT"Core/Library/Src/color.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Library/Src/color.o"
-arm-none-eabi-gcc "../Core/Library/Src/ws2812.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/affichage reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Library/Src/ws2812.d" -MT"Core/Library/Src/ws2812.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Library/Src/ws2812.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+arm-none-eabi-gcc "../Core/Library/Src/canvas.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Library/Src/canvas.d" -MT"Core/Library/Src/canvas.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Library/Src/canvas.o"
+arm-none-eabi-gcc "../Core/Library/Src/color.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Library/Src/color.d" -MT"Core/Library/Src/color.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Library/Src/color.o"
+arm-none-eabi-gcc "../Core/Library/Src/image_data.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Library/Src/image_data.d" -MT"Core/Library/Src/image_data.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Library/Src/image_data.o"
+arm-none-eabi-gcc "../Core/Library/Src/ws2812.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Library/Src/ws2812.d" -MT"Core/Library/Src/ws2812.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Library/Src/ws2812.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:220:4: warning: "/*" within comment [-Wcomment]
-  220 |    /**********Caractère Minute Dizaine***************/
+../Core/Src/main.c:235:4: warning: "/*" within comment [-Wcomment]
+  235 |    /**********Caractère Minute Dizaine***************/
       |     
-../Core/Src/main.c:265:4: warning: "/*" within comment [-Wcomment]
-  265 |    /**********Caractère Heure Unité***************/
+../Core/Src/main.c:280:4: warning: "/*" within comment [-Wcomment]
+  280 |    /**********Caractère Heure Unité***************/
       |     
-../Core/Src/main.c:310:2: warning: "/*" within comment [-Wcomment]
-  310 |  /**********Caractère Heure Dizaine***************/
+../Core/Src/main.c:325:2: warning: "/*" within comment [-Wcomment]
+  325 |  /**********Caractère Heure Dizaine***************/
       |   
-../Core/Src/main.c:357:4: warning: "/*" within comment [-Wcomment]
-  357 |    /******************************/
+../Core/Src/main.c:372:4: warning: "/*" within comment [-Wcomment]
+  372 |    /******************************/
       |     
-arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\affichage reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\Rainbow-Reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: 1404-Reveil_Matrice_STM.elf
  
 arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
 arm-none-eabi-objdump -h -S  1404-Reveil_Matrice_STM.elf  > "1404-Reveil_Matrice_STM.list"
    text	   data	    bss	    dec	    hex	filename
-  22400	    120	   4752	  27272	   6a88	1404-Reveil_Matrice_STM.elf
+  23468	    552	   4752	  28772	   7064	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1404-Reveil_Matrice_STM.list
+ 
+15:09:34 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23468	    552	   4752	  28772	   7064	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+15:09:55 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23468	    552	   4752	  28772	   7064	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+15:12:47 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23468	    552	   4752	  28772	   7064	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+15:13:18 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23468	    552	   4752	  28772	   7064	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+15:16:56 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Library/Src/canvas.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Library/Src/canvas.d" -MT"Core/Library/Src/canvas.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Library/Src/canvas.o"
+arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\Rainbow-Reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1404-Reveil_Matrice_STM.elf
+ 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+arm-none-eabi-objdump -h -S  1404-Reveil_Matrice_STM.elf  > "1404-Reveil_Matrice_STM.list"
+   text	   data	    bss	    dec	    hex	filename
+  23468	    552	   4752	  28772	   7064	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1404-Reveil_Matrice_STM.list
+ 
+15:19:21 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:236:4: warning: "/*" within comment [-Wcomment]
+  236 |    /**********Caractère Minute Dizaine***************/
+      |     
+../Core/Src/main.c:281:4: warning: "/*" within comment [-Wcomment]
+  281 |    /**********Caractère Heure Unité***************/
+      |     
+../Core/Src/main.c:326:2: warning: "/*" within comment [-Wcomment]
+  326 |  /**********Caractère Heure Dizaine***************/
+      |   
+../Core/Src/main.c:373:4: warning: "/*" within comment [-Wcomment]
+  373 |    /******************************/
+      |     
+arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\Rainbow-Reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1404-Reveil_Matrice_STM.elf
+ 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+arm-none-eabi-objdump -h -S  1404-Reveil_Matrice_STM.elf  > "1404-Reveil_Matrice_STM.list"
+   text	   data	    bss	    dec	    hex	filename
+  23492	    552	   4752	  28796	   707c	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1404-Reveil_Matrice_STM.list
+ 
+15:19:49 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:237:4: warning: "/*" within comment [-Wcomment]
+  237 |    /**********Caractère Minute Dizaine***************/
+      |     
+../Core/Src/main.c:282:4: warning: "/*" within comment [-Wcomment]
+  282 |    /**********Caractère Heure Unité***************/
+      |     
+../Core/Src/main.c:327:2: warning: "/*" within comment [-Wcomment]
+  327 |  /**********Caractère Heure Dizaine***************/
+      |   
+../Core/Src/main.c:374:4: warning: "/*" within comment [-Wcomment]
+  374 |    /******************************/
+      |     
+arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\Rainbow-Reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1404-Reveil_Matrice_STM.elf
+ 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+arm-none-eabi-objdump -h -S  1404-Reveil_Matrice_STM.elf  > "1404-Reveil_Matrice_STM.list"
+   text	   data	    bss	    dec	    hex	filename
+  23524	    552	   4752	  28828	   709c	1404-Reveil_Matrice_STM.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1404-Reveil_Matrice_STM.list
+ 
+15:20:31 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:237:4: warning: "/*" within comment [-Wcomment]
+  237 |    /**********Caractère Minute Dizaine***************/
+      |     
+../Core/Src/main.c:282:4: warning: "/*" within comment [-Wcomment]
+  282 |    /**********Caractère Heure Unité***************/
+      |     
+../Core/Src/main.c:327:2: warning: "/*" within comment [-Wcomment]
+  327 |  /**********Caractère Heure Dizaine***************/
+      |   
+../Core/Src/main.c:374:4: warning: "/*" within comment [-Wcomment]
+  374 |    /******************************/
+      |     
+arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\Rainbow-Reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1404-Reveil_Matrice_STM.elf
+ 
+arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
+arm-none-eabi-objdump -h -S  1404-Reveil_Matrice_STM.elf  > "1404-Reveil_Matrice_STM.list"
+   text	   data	    bss	    dec	    hex	filename
+  23524	    552	   4752	  28828	   709c	1404-Reveil_Matrice_STM.elf
 Finished building: default.size.stdout
  
 Finished building: 1404-Reveil_Matrice_STM.list

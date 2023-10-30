@@ -47,3 +47,98 @@ void colorDiagonal(Canvas* canvas, Pixel encre, uint8_t diagSum) {
     }
 }
 //
+
+// Fonction pour dessiner un rectangle
+void drawRectangle(Canvas* canvas, int W,int H, int X, int Y, Pixel BorderInk, Pixel FillInk) {
+    if (canvas == NULL || H <= 0 || W <= 0 || X < 0 || Y < 0) {
+        // Vérifiez les paramètres d'entrée valides
+        return;
+    }
+
+    int i, j;
+
+    for (i = Y; i < Y + H; i++) {
+        for (j = X; j < X + W; j++) {
+            if (i == Y || i == Y + H - 1 || j == X || j == X + W - 1) {
+                // Dessiner la bordure
+                    *getPixel(canvas,j,i) = BorderInk;
+            } else {
+                // Remplir l'intérieur du rectangle
+                if (FillInk.R != 1) {
+                	*getPixel(canvas,j,i) = FillInk;
+                }
+            }
+        }
+    }
+}
+
+// Fonction pour afficher un chiffre en BCD
+void displayBCD(Canvas* canvas, int X, int Y, int BCD, int NbDeBitAffiches) {
+    if (canvas == NULL || X < 0 || Y < 0 || BCD < 0 || NbDeBitAffiches <= 0) {
+        // Vérifiez les paramètres d'entrée valides
+        return;
+    }
+
+    int j;
+    int mask = 1 << (NbDeBitAffiches - 1);  // Masque pour extraire chaque bit
+
+        for (j = X; j < X + NbDeBitAffiches; j++) {
+            if (BCD & mask) {
+                // Afficher un 1 (blanc)
+                Pixel* pixel = getPixel(canvas, j, Y);
+                if (pixel != NULL) {
+                    pixel->R = MAX_LUX;
+                    pixel->G = MAX_LUX;
+                    pixel->B = MAX_LUX;
+                }
+            }
+            else{
+            	//afficher un 0 (noir)
+            	Pixel* pixel = getPixel(canvas, j, Y);
+            	if (pixel != NULL) {
+            		pixel->R = 0;
+                    pixel->G = 0;
+                    pixel->B = 0;
+            	}
+            }
+            mask >>= 1;
+        }
+}
+
+void drawImage(ImageData* imageData, int x, int y, Canvas* canvas) {
+    if (imageData == NULL || canvas == NULL) {
+        // Gérez les cas d'erreur ou de paramètres non valides, si nécessaire
+        return;
+    }
+
+    for (int imgY = 0; imgY < imageData->height; imgY++) {
+        for (int imgX = 0; imgX < imageData->width; imgX++) {
+            uint8_t* pixel = &imageData->data[(imgY * imageData->width + imgX) * 4];  // BGRA format
+
+            // Ignore les pixels totalement transparents (canal alpha à zéro)
+            if (pixel[3] == 0x00) {
+                continue;
+            }
+
+            int canvasX = x + imgX;  // Coordonnée X sur le canevas
+            int canvasY = y + (imageData->height - 1) - imgY;  // Coordonnée Y sur le canevas
+
+            // Assurez-vous que les coordonnées se trouvent dans les limites du canevas
+            if (canvasX > 0 && canvasX <= canvas->numCols && canvasY > 0 && canvasY <= canvas->numRows) {
+                // Obtenez le pixel actuel du canevas en utilisant la fonction getPixel
+                Pixel* canvasPixel = getPixel(canvas, canvasX, canvasY);
+
+                // Appliquez la couleur de l'image avec la transparence sur le pixel du canevas
+                // Assurez-vous d'ajuster les canaux alpha en conséquence
+                canvasPixel->R = (pixel[2] * pixel[3] + canvasPixel->R * (255 - pixel[3])) / 255;
+                canvasPixel->G = (pixel[1] * pixel[3] + canvasPixel->G * (255 - pixel[3])) / 255;
+                canvasPixel->B = (pixel[0] * pixel[3] + canvasPixel->B * (255 - pixel[3])) / 255;
+                // Appliquer le masque pour forcer les valeurs à être paires
+                canvasPixel->R &= 0xFE; // Le masque 0xFE force le dernier bit à 0.
+                canvasPixel->G &= 0xFE;
+                canvasPixel->B &= 0xFE;
+
+            }
+        }
+    }
+}
