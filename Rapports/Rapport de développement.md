@@ -326,7 +326,7 @@ void displayBCD(Canvas* canvas, int X, int Y, int BCD, int NbDeBitAffiches) {
 }
 ```
 
-#### drawImage();
+#### Affichage d'images
 Sans doutes la fonction la plus polyvalente du lot, elle permet d'afficher une image sur le canvas à un endroit désiré. Il est également possible de placer une image que partiellement sur le canvas.
 
 ##### ImageData
@@ -341,7 +341,7 @@ typedef struct {
 ```
 l'idéal aurait été de stocker ces images avec un tableau de Pixels, et un tableau d'alphas, mais pour s'éviter le labeur de fabriquer nos images pixel par pixel, j'ai préféré me pencher vers [la solution de LVGL](https://lvgl.io/tools/imageconverter) qui permet de convertir n'importe quel image PNG en tableau BGRA (Blue, Green, Red, Alpha) avec l'option CF_TRUE_COLOR_ALPHA.
 
-
+Ensuite, grâce à
 
 
 
@@ -364,7 +364,7 @@ l'idéal aurait été de stocker ces images avec un tableau de Pixels, et un tab
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NzY4NjI5NSwxMTQ0NTU1MTkxLDE0Nz
-AyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEy
-N119
+eyJoaXN0b3J5IjpbODIzNDM0MDExLDE5ODc2ODYyOTUsMTE0ND
+U1NTE5MSwxNDcwMjAyNTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1
+MSwzODM2NDMxMjddfQ==
 -->
