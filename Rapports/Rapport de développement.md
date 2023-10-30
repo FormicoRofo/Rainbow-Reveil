@@ -254,7 +254,7 @@ Le résultat est ce magnifique arc-en-ciel :
 
 
 ### Journal de Développement - 30.10.2023
-Les vacances sont finies ! On continue le projet. Pour bien se remettre dans le bain, j'ai aujourd'hui étoffé la bibliothèque de fonctions 
+Les vacances sont finies ! On continue le projet. Pour bien se remettre dans le bain, j'ai aujourd'hui étoffé la bibliothèque de fonctions permettant de manipuler le canevas. Elles ne sont pas toutes utiles pour créer l'affichage que j'ai prévu initialement, mais ellent
 
 
 
@@ -280,7 +280,7 @@ Les vacances sont finies ! On continue le projet. Pour bien se remettre dans le 
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxOTcyNjM0MywxMTQ0NTU1MTkxLDE0Nz
-AyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEy
-N119
+eyJoaXN0b3J5IjpbLTE1ODAyMjk0NTYsMTE0NDU1NTE5MSwxND
+cwMjAyNTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMx
+MjddfQ==
 -->
