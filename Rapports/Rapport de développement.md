@@ -291,6 +291,41 @@ void drawRectangle(Canvas* canvas, int W,int H, int X, int Y, Pixel BorderInk, P
 #### Fonction displayBCD
 Cette fonction est un peu moins configurable, car elle est prévue exclusivement à des fins de debug ou à la réalisation de mon affichage. Elle permet d'afficher un certain nombre de bits sur l'écran, les 0 étant représentés par des pixels noirs, et les 1 par des pixels blancs. Les coordonnées du bit de poids fort sont également à fournir.
 
+```c
+// Fonction pour afficher un chiffre en BCD
+void displayBCD(Canvas* canvas, int X, int Y, int BCD, int NbDeBitAffiches) {
+    if (canvas == NULL || X < 0 || Y < 0 || BCD < 0 || NbDeBitAffiches <= 0) {
+        // Vérifiez les paramètres d'entrée valides
+        return;
+    }
+
+    int j;
+    int mask = 1 << (NbDeBitAffiches - 1);  // Masque pour extraire chaque bit
+
+        for (j = X; j < X + NbDeBitAffiches; j++) {
+            if (BCD & mask) {
+                // Afficher un 1 (blanc)
+                Pixel* pixel = getPixel(canvas, j, Y);
+                if (pixel != NULL) {
+                    pixel->R = MAX_LUX;
+                    pixel->G = MAX_LUX;
+                    pixel->B = MAX_LUX;
+                }
+            }
+            else{
+            	//afficher un 0 (noir)
+            	Pixel* pixel = getPixel(canvas, j, Y);
+            	if (pixel != NULL) {
+            		pixel->R = 0;
+                    pixel->G = 0;
+                    pixel->B = 0;
+            	}
+            }
+            mask >>= 1;
+        }
+}
+```
+
 
 
 
@@ -314,7 +349,7 @@ Cette fonction est un peu moins configurable, car elle est prévue exclusivement
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTg2NzA5MTIsMTE0NDU1NTE5MSwxND
-cwMjAyNTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMx
-MjddfQ==
+eyJoaXN0b3J5IjpbLTk5MzMwOTI4MCwxMTQ0NTU1MTkxLDE0Nz
+AyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEy
+N119
 -->
