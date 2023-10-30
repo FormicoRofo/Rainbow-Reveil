@@ -341,7 +341,8 @@ typedef struct {
 ```
 l'idéal aurait été de stocker ces images avec un tableau de Pixels, et un tableau d'alphas, mais pour s'éviter le labeur de fabriquer nos images pixel par pixel, j'ai préféré me pencher vers [la solution de LVGL](https://lvgl.io/tools/imageconverter) qui permet de convertir n'importe quel image PNG en tableau BGRA (Blue, Green, Red, Alpha) avec l'option CF_TRUE_COLOR_ALPHA.
 
-Ensuite, grâce à
+##### drawImage
+Ensuite, grâce à ce tableau, on peut relativement facilement afficher ladite image sur un canvas, avec nos paramètres ha
 
 
 
@@ -364,7 +365,7 @@ Ensuite, grâce à
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIzNDM0MDExLDE5ODc2ODYyOTUsMTE0ND
-U1NTE5MSwxNDcwMjAyNTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1
-MSwzODM2NDMxMjddfQ==
+eyJoaXN0b3J5IjpbLTIxMjMwNzg0OTQsMTk4NzY4NjI5NSwxMT
+Q0NTU1MTkxLDE0NzAyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0
+NzUxLDM4MzY0MzEyN119
 -->
