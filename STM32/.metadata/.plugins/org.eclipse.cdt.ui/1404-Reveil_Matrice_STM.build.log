@@ -1,10 +1,10 @@
-15:16:51 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+16:33:48 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
 make -j16 all 
 arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
    text	   data	    bss	    dec	    hex	filename
-  23060	    120	   4688	  27868	   6cdc	1404-Reveil_Matrice_STM.elf
+  23064	    120	   4688	  27872	   6ce0	1404-Reveil_Matrice_STM.elf
 Finished building: default.size.stdout
  
 
-15:16:51 Build Finished. 0 errors, 0 warnings. (took 440ms)
+16:33:49 Build Finished. 0 errors, 0 warnings. (took 457ms)
 

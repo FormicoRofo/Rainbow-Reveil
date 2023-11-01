@@ -13,6 +13,5 @@
 #define D_MAX_LUX 254	//Luminosité maximale des digits (0-254 nombre paires uniquement)
 #define RB_MAX_LUX 100	//Luminosité maximale de l'arc en ciel (0-254 nombre paires uniquement)
 #define RB_SPEED 1 //facteur d'accélération de l'arc en ciel (0-255)
-#define LUM_CAL_MUL 255
-#define LUM_CAL_OFFSET 0
+#define LUM_CAL_OFFSET -5
 #endif /* INC_DEFINES_H_ */

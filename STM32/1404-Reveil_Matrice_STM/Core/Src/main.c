@@ -174,9 +174,8 @@ int main(void)
 
 	  /**********Measure***************/
 	  if(needMeasure){
-		  facteurLuminosite = flashReadADC(&myCanvas);
-		  facteurLuminosite *= LUM_CAL_MUL/255;
-		  facteurLuminosite += LUM_CAL_OFFSET;
+		  facteurLuminosite = flashReadADC(&myCanvas) + LUM_CAL_OFFSET;
+		  needMeasure = false;
 	  }
 
 	  /**********Background***************/
@@ -474,6 +473,8 @@ void HAL_UART_RxCpltCallback (UART_HandleTypeDef * huart)
 		Minutes_U = Minutes_brt & 0x0F;	//Traite le data pour avoir l'Unité des Minutes
 
 		Minutes_D = (Minutes_brt & 0xF0) >> 4;	//Traite le data pour avoir la Dizaine des Minutes
+
+		needMeasure = true;
 
 		if(HAL_UART_Receive_IT(&huart1, Rx_data, 19) == HAL_ERROR)	//Réception d'UART lors d'une erreur
 		{

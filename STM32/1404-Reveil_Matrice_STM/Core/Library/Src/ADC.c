@@ -20,7 +20,7 @@ uint8_t readADC(){
 
 uint8_t flashReadADC(Canvas* canvas){
 	setWHOLEcolor( 0, 0, 0);
-	HAL_Delay(4);
+	HAL_Delay(200);
 	uint8_t mesure = readADC();
 	sendCanvas(canvas);
 	return mesure;
