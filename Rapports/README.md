@@ -1,5 +1,7 @@
 # Rapports
-Dans ce dossier vous trouverez les différent rapports du projet au format markdown (et dans le futur en html). Dans github vous pouvez les ouvrir 
+Dans ce dossier vous trouverez les différent rapports du projet au format markdown (et dans le futur en html). Github dispose d'un lecteur markdown intégré. Vous pouvez  donc les ouvrir en double-cliquant dessus.
+## Rapport de développement
+Ce rapport décris chronologiquement les étapes du développement et d
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3ODQ3NDYwOF19
+eyJoaXN0b3J5IjpbMjc3Njc1NDY1XX0=
 -->
