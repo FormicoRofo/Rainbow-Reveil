@@ -34,7 +34,7 @@ extern "C" {
 /* USER CODE BEGIN Includes */
 #include "includes.h"
 /* USER CODE END Includes */
-#include "defines.h"
+
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
 
@@ -90,8 +90,6 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define MCO_Pin GPIO_PIN_0
 #define MCO_GPIO_Port GPIOF
-#define ADC_BRIGHTNESS_Pin GPIO_PIN_7
-#define ADC_BRIGHTNESS_GPIO_Port GPIOA
 #define SW4_Pin GPIO_PIN_8
 #define SW4_GPIO_Port GPIOA
 #define SW3_Pin GPIO_PIN_11

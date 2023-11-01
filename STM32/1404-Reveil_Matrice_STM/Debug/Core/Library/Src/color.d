@@ -37,7 +37,8 @@ Core/Library/Src/color.o: ../Core/Library/Src/color.c \
  C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc/image_data.h \
  C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc/canvas.h \
  C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc/color.h \
- C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc/ws2812.h
+ C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc/ws2812.h \
+ C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc/ADC.h
 C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc/includes.h:
 C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc/defines.h:
 C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc/main.h:
@@ -77,3 +78,4 @@ C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroContro
 C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc/canvas.h:
 C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc/color.h:
 C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc/ws2812.h:
+C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc/ADC.h:

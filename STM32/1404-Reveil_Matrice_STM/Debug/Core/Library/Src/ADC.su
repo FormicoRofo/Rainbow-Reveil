@@ -1,0 +1,2 @@
+../Core/Library/Src/ADC.c:13:9:readADC	8	static
+../Core/Library/Src/ADC.c:21:9:flashReadADC	32	static
