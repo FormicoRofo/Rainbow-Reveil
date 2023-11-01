@@ -41,7 +41,6 @@
 
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc;
-DMA_HandleTypeDef hdma_adc;
 
 TIM_HandleTypeDef htim2;
 DMA_HandleTypeDef hdma_tim2_ch1;
@@ -123,12 +122,20 @@ int main(void)
   /* USER CODE BEGIN 2 */
   ws2812_start();
   HAL_UART_Receive_IT(&huart1, Rx_data, 19);
-  HAL_ADC_Start(&hadc);
+  //HAL_ADC_Calibration_Start(&hadc);
+
+
 
   uint8_t H =0;
-  ImageData* pacManSprite;
+
+
+
+  uint8_t valADC=0;
+
+
   // Déclarez une instance de Canvas
   Canvas myCanvas;
+  Canvas blackCanvas;
   // Initialisez la structure Canvas
   myCanvas.numCols = NUM_COLS;
   myCanvas.numRows = NUM_ROWS;
@@ -137,8 +144,15 @@ int main(void)
   // Utilisez memset pour initialiser le tableau à zéro
   memset(myCanvas.pixels, 0, sizeof(Pixel) * NUM_COLS * NUM_ROWS);
 
-  // Vous pouvez maintenant utiliser myCanvas et les pixels initialisé
 
+  blackCanvas.numCols = NUM_COLS;
+    blackCanvas.numRows = NUM_ROWS;
+    // Allouez de la mémoire pour les pixels
+    blackCanvas.pixels = malloc(sizeof(Pixel) * NUM_COLS * NUM_ROWS);
+    // Utilisez memset pour initialiser le tableau à zéro
+    memset(blackCanvas.pixels, 0, sizeof(Pixel) * NUM_COLS * NUM_ROWS);
+  // Vous pouvez maintenant utiliser myCanvas et les pixels initialisé
+  setCanvasColor(&blackCanvas, (Pixel){0,0,0});
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -164,20 +178,10 @@ int main(void)
 		  colorDiagonal(&myCanvas, HSVtoPixel((H + (diag* 255 / 23))%255 , MAX_LUX), diag);
 	  }
 
-	  drawRectangle(&myCanvas, 19, 5, 1, 1, (Pixel){0,0,0}, (Pixel){0,0,0});
-
-	  displayBCD(&myCanvas, 8, 3, H>>4, 4);
-
-	  switch((H*6/100)%7){
-	  case 0 : pacManSprite = &pacMan0; break;
-	  case 1 : pacManSprite = &pacMan1; break;
-	  case 2 : pacManSprite = &pacMan2; break;
-	  case 3 : pacManSprite = &pacMan3; break;
-	  case 4 : pacManSprite = &pacMan2; break;
-	  case 5 : pacManSprite = &pacMan1; break;
-	  }
-	  drawImage(pacManSprite, -5 + (25*H)/255,1, &myCanvas);
-
+	  displayBCD(&myCanvas, 2, 3, Heures_D, 2);
+	  displayBCD(&myCanvas, 5, 3, Heures_U, 4);
+	  displayBCD(&myCanvas, 10, 3, Heures_D, 4);
+	  displayBCD(&myCanvas, 15, 3, Heures_U, 4);
 
 	  sendCanvas(&myCanvas);
 
@@ -188,8 +192,9 @@ int main(void)
 		  H++;
 	  }
 
+
 	  /**********Caractère Minute Unité***************/
-	  /*
+	  	 /*
 	  switch(Minutes_U)
 	  {
 	  case 0:
@@ -442,13 +447,13 @@ static void MX_ADC_Init(void)
   */
   hadc.Instance = ADC1;
   hadc.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
-  hadc.Init.Resolution = ADC_RESOLUTION_12B;
+  hadc.Init.Resolution = ADC_RESOLUTION_8B;
   hadc.Init.DataAlign = ADC_DATAALIGN_RIGHT;
   hadc.Init.ScanConvMode = ADC_SCAN_DIRECTION_FORWARD;
   hadc.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
   hadc.Init.LowPowerAutoWait = DISABLE;
   hadc.Init.LowPowerAutoPowerOff = DISABLE;
-  hadc.Init.ContinuousConvMode = ENABLE;
+  hadc.Init.ContinuousConvMode = DISABLE;
   hadc.Init.DiscontinuousConvMode = DISABLE;
   hadc.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
@@ -578,9 +583,6 @@ static void MX_DMA_Init(void)
   __HAL_RCC_DMA1_CLK_ENABLE();
 
   /* DMA interrupt init */
-  /* DMA1_Channel1_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Channel1_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
   /* DMA1_Channel2_3_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Channel2_3_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA1_Channel2_3_IRQn);

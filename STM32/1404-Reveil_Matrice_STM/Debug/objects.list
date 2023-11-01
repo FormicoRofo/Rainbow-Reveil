@@ -1,3 +1,4 @@
+"./Core/Library/Src/ADC.o"
 "./Core/Library/Src/canvas.o"
 "./Core/Library/Src/color.o"
 "./Core/Library/Src/image_data.o"
