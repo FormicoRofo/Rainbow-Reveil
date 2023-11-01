@@ -125,10 +125,10 @@ int main(void)
   //HAL_ADC_Calibration_Start(&hadc);
 
 
-  /*
+
   uint8_t H =0;
-  ImageData* pacManSprite;
-  */
+
+
 
   uint8_t valADC=0;
 
@@ -174,24 +174,14 @@ int main(void)
 	  }
 	  /**********Background***************/
 
-	  /*for(uint8_t diag=1; diag<=23; diag++){
+	  for(uint8_t diag=1; diag<=23; diag++){
 		  colorDiagonal(&myCanvas, HSVtoPixel((H + (diag* 255 / 23))%255 , MAX_LUX), diag);
 	  }
 
-	  drawRectangle(&myCanvas, 19, 5, 1, 1, (Pixel){0,0,0}, (Pixel){0,0,0});
-
-	  displayBCD(&myCanvas, 8, 3, H>>4, 4);
-
-	  switch((H*6/100)%7){
-	  case 0 : pacManSprite = &pacMan0; break;
-	  case 1 : pacManSprite = &pacMan1; break;
-	  case 2 : pacManSprite = &pacMan2; break;
-	  case 3 : pacManSprite = &pacMan3; break;
-	  case 4 : pacManSprite = &pacMan2; break;
-	  case 5 : pacManSprite = &pacMan1; break;
-	  }
-	  drawImage(pacManSprite, -5 + (25*H)/255,1, &myCanvas);
-
+	  displayBCD(&myCanvas, 2, 3, Heures_D, 2);
+	  displayBCD(&myCanvas, 5, 3, Heures_U, 4);
+	  displayBCD(&myCanvas, 10, 3, Heures_D, 4);
+	  displayBCD(&myCanvas, 15, 3, Heures_U, 4);
 
 	  sendCanvas(&myCanvas);
 
@@ -201,25 +191,10 @@ int main(void)
 	  else{
 		  H++;
 	  }
-		*/
 
-
-	  //Read ADC
-	  HAL_ADC_Start(&hadc);
-	  HAL_ADC_PollForConversion(&hadc, 1);
-	  valADC= HAL_ADC_GetValue(&hadc);
-
-
-	  valADC &= 0xFE;
-	  setCanvasColor(&myCanvas, (Pixel){valADC,0,0});
-	  drawRectangle(&myCanvas, 10, 5, 10, 1, (Pixel){0,0,0}, (Pixel){0,0,0});
-	  displayBCD(&myCanvas, 1, 3, valADC, 8);
-
-	  sendCanvas(&myCanvas);
-	  HAL_Delay(200);
 
 	  /**********Caractère Minute Unité***************/
-	  /*
+	  	 /*
 	  switch(Minutes_U)
 	  {
 	  case 0:
