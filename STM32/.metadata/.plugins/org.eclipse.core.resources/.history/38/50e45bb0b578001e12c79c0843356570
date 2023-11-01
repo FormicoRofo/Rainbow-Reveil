@@ -1,0 +1,17 @@
+/*
+ * defines.h
+ *
+ *  Created on: 9 oct. 2023
+ *      Author: alyvasseur
+ */
+
+#ifndef INC_DEFINES_H_
+#define INC_DEFINES_H_
+
+#define NUM_COLS 19
+#define NUM_ROWS 5
+#define D_MAX_LUX 254
+#define RB_MAX_LUX 100
+#define RB_SPEED 100 //facteur d'accélération de l'arc en ciel
+#define RB_SLOW 10 //facteur de rallentissement de l'arc en ciel
+#endif /* INC_DEFINES_H_ */

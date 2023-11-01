@@ -11,6 +11,7 @@
 #include "stm32f0xx_hal.h"
 #include "includes.h"
 
+
 // Définition de la structure Pixel
 typedef struct {
     uint8_t R;
@@ -31,7 +32,7 @@ void sendCanvas(Canvas* canvas);
 Pixel* getPixel(Canvas* canvas, int x, int y);
 void colorDiagonal(Canvas* canvas, Pixel encre, uint8_t diagSum);
 void drawRectangle(Canvas* canvas, int W, int H, int X, int Y, Pixel BorderInk, Pixel FillInk);
-void displayBCD(Canvas* canvas, int X, int Y, int BCD, int NbDeBitAffiches);
+void displayBCD(Canvas* canvas, int X, int Y, int BCD, int NbDeBitAffiches, int facteurLuminosite);
 void drawImage(ImageData* imageData, int x, int y, Canvas* canvas);
 
 #endif /* INC_CANVAS_H_ */

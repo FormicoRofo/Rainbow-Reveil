@@ -6,6 +6,8 @@
  */
 #include "includes.h"
 
+extern int facteurLuminosite;
+
 void setCanvasColor(Canvas* canvas, Pixel encre) {
 for (uint16_t i = 0; i < canvas->numCols * canvas->numRows; i++) {
 		canvas->pixels[i]=encre;
@@ -73,7 +75,7 @@ void drawRectangle(Canvas* canvas, int W,int H, int X, int Y, Pixel BorderInk, P
 }
 
 // Fonction pour afficher un chiffre en BCD
-void displayBCD(Canvas* canvas, int X, int Y, int BCD, int NbDeBitAffiches) {
+void displayBCD(Canvas* canvas, int X, int Y, int BCD, int NbDeBitAffiches, int facteurLuminosite) {
     if (canvas == NULL || X < 0 || Y < 0 || BCD < 0 || NbDeBitAffiches <= 0) {
         // Vérifiez les paramètres d'entrée valides
         return;
@@ -87,9 +89,9 @@ void displayBCD(Canvas* canvas, int X, int Y, int BCD, int NbDeBitAffiches) {
                 // Afficher un 1 (blanc)
                 Pixel* pixel = getPixel(canvas, j, Y);
                 if (pixel != NULL) {
-                    pixel->R = MAX_LUX;
-                    pixel->G = MAX_LUX;
-                    pixel->B = MAX_LUX;
+                    pixel->R = (facteurLuminosite*D_MAX_LUX)/255;
+                    pixel->G = (facteurLuminosite*D_MAX_LUX)/255;
+                    pixel->B = (facteurLuminosite*D_MAX_LUX)/255;
                 }
             }
             else{

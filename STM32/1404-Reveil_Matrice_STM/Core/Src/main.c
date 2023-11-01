@@ -85,6 +85,8 @@ uint16_t step = 0;
 
 uint16_t ReadADC = 0;
 
+bool needMeasure=false;
+
 /* USER CODE END 0 */
 
 /**
@@ -127,10 +129,7 @@ int main(void)
 
 
   uint8_t H =0;
-
-
-
-  uint8_t valADC=0;
+  uint8_t facteurLuminosite=255;
 
 
   // Déclarez une instance de Canvas
@@ -172,211 +171,31 @@ int main(void)
 	  {
 		  HAL_UART_Receive_IT(&huart1, Rx_data, 19);
 	  }
+
+	  /**********Measure***************/
+	  if(needMeasure){
+		  facteurLuminosite = flashReadADC(&myCanvas);
+		  facteurLuminosite *= LUM_CAL_MUL/255;
+		  facteurLuminosite += LUM_CAL_OFFSET;
+	  }
+
 	  /**********Background***************/
 
 	  for(uint8_t diag=1; diag<=23; diag++){
-		  colorDiagonal(&myCanvas, HSVtoPixel((H + (diag* 255 / 23))%255 , MAX_LUX), diag);
+		  colorDiagonal(&myCanvas, HSVtoPixel((RB_SPEED*H + (diag* 255 / 23))%255 , (facteurLuminosite*RB_MAX_LUX)/255), diag);
 	  }
 
-	  displayBCD(&myCanvas, 2, 3, Heures_D, 2);
-	  displayBCD(&myCanvas, 5, 3, Heures_U, 4);
-	  displayBCD(&myCanvas, 10, 3, Heures_D, 4);
-	  displayBCD(&myCanvas, 15, 3, Heures_U, 4);
+	  displayBCD(&myCanvas, 2, 3, Heures_D, 2, facteurLuminosite);
+	  displayBCD(&myCanvas, 5, 3, Heures_U, 4, facteurLuminosite);
+	  displayBCD(&myCanvas, 10, 3, Minutes_D, 4, facteurLuminosite);
+	  displayBCD(&myCanvas, 15, 3, Minutes_U, 4, facteurLuminosite);
 
 	  sendCanvas(&myCanvas);
 
-	  if (H >= 255){
+	  H++;
+	  if(!((RB_SPEED*H)%255)){
 		  H=0;
 	  }
-	  else{
-		  H++;
-	  }
-
-
-	  /**********Caractère Minute Unité***************/
-	  	 /*
-	  switch(Minutes_U)
-	  {
-	  case 0:
-		  Chara_0(MinuteUnite);
-		  break;
-
-	  case 1:
-		  Chara_1(MinuteUnite);
-	  	  break;
-
-	  case 2:
-		  Chara_2(MinuteUnite);
-		  break;
-
-	  case 3:
-		  Chara_3(MinuteUnite);
-	  	  break;
-
-	  case 4:
-		  Chara_4(MinuteUnite);
-		  break;
-
-	  case 5:
-		  Chara_5(MinuteUnite);
-	  	  break;
-
-	  case 6:
-		  Chara_6(MinuteUnite);
-		  break;
-
-	  case 7:
-		  Chara_7(MinuteUnite);
-		  break;
-
-	  case 8:
-		  Chara_8(MinuteUnite);
-		  break;
-
-	  case 9:
-		  Chara_9(MinuteUnite);
-		  break;
-	  }
-
-
-	  /**********Caractère Minute Dizaine***************/
-	  /*
-	  switch(Minutes_D)
-	  {
-	  case 0:
-		  Chara_0(MinuteDizaine);
-		  break;
-
-	  case 1:
-		  Chara_1(MinuteDizaine);
-		  break;
-
-	  case 2:
-		  Chara_2(MinuteDizaine);
-		  break;
-
-	  case 3:
-		  Chara_3(MinuteDizaine);
-		  break;
-
-	  case 4:
-		  Chara_4(MinuteDizaine);
-		  break;
-
-	  case 5:
-		  Chara_5(MinuteDizaine);
-		  break;
-
-	  case 6:
-		  Chara_6(MinuteDizaine);
-		  break;
-
-	  case 7:
-		  Chara_7(MinuteDizaine);
-		  break;
-
-	  case 8:
-		  Chara_8(MinuteDizaine);
-		  break;
-
-	  case 9:
-		  Chara_9(MinuteDizaine);
-		  break;
-	  }
-
-	  /**********Caractère Heure Unité***************/
-	  /*
-	  switch(Heures_U)
-	  {
-	  case 0:
-		  Chara_0(HeureUnite);
-		  break;
-
-	  case 1:
-		  Chara_1(HeureUnite);
-		  break;
-
-	  case 2:
-		  Chara_2(HeureUnite);
-		  break;
-
-	  case 3:
-		  Chara_3(HeureUnite);
-		  break;
-
-	  case 4:
-		  Chara_4(HeureUnite);
-		  break;
-
-	  case 5:
-		  Chara_5(HeureUnite);
-		  break;
-
-	  case 6:
-		  Chara_6(HeureUnite);
-		  break;
-
-	  case 7:
-		  Chara_7(HeureUnite);
-		  break;
-
-	  case 8:
-		  Chara_8(HeureUnite);
-		  break;
-
-	  case 9:
-		  Chara_9(HeureUnite);
-		  break;
-	  }
-
-	/**********Caractère Heure Dizaine***************/
-	  /*
-	  switch(Heures_D)
-	  {
-	  case 0:
-		  Chara_0(HeureDizaine);
-		  break;
-
-	  case 1:
-		  Chara_1(HeureDizaine);
-		  break;
-
-	  case 2:
-		  Chara_2(HeureDizaine);
-		  break;
-
-	  case 3:
-		  Chara_3(HeureDizaine);
-		  break;
-
-	  case 4:
-		  Chara_4(HeureDizaine);
-		  break;
-
-	  case 5:
-		  Chara_5(HeureDizaine);
-		  break;
-
-	  case 6:
-		  Chara_6(HeureDizaine);
-		  break;
-
-	  case 7:
-		  Chara_7(HeureDizaine);
-		  break;
-
-	  case 8:
-		  Chara_8(HeureDizaine);
-		  break;
-
-	  case 9:
-		  Chara_9(HeureDizaine);
-		  break;
-	  }
-
-
-	  Clignotement1S();
-	  /******************************/
   }
   /* USER CODE END 3 */
 }

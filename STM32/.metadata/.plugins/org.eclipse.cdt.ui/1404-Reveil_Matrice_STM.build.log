@@ -1,33 +1,10 @@
-13:07:32 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
+15:16:51 **** Incremental Build of configuration Debug for project 1404-Reveil_Matrice_STM ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F042x6 -c -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Library/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Core/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Include" -I"C:/Users/alyvasseur/Education Vaud/ETML_FLO-22-24_Teams - Vasseur/MicroControleur/Rainbow-Reveil/STM32/1404-Reveil_Matrice_STM/Drivers/CMSIS/Device/ST/STM32F0xx/Include" -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:242:4: warning: "/*" within comment [-Wcomment]
-  242 |    /**********Caractère Minute Dizaine***************/
-      |     
-../Core/Src/main.c:287:4: warning: "/*" within comment [-Wcomment]
-  287 |    /**********Caractère Heure Unité***************/
-      |     
-../Core/Src/main.c:332:2: warning: "/*" within comment [-Wcomment]
-  332 |  /**********Caractère Heure Dizaine***************/
-      |   
-../Core/Src/main.c:379:4: warning: "/*" within comment [-Wcomment]
-  379 |    /******************************/
-      |     
-../Core/Src/main.c:133:11: warning: unused variable 'valADC' [-Wunused-variable]
-  133 |   uint8_t valADC=0;
-      |           ^~~~~~
-arm-none-eabi-gcc -o "1404-Reveil_Matrice_STM.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\Rainbow-Reveil\STM32\1404-Reveil_Matrice_STM\STM32F042K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1404-Reveil_Matrice_STM.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 1404-Reveil_Matrice_STM.elf
- 
 arm-none-eabi-size   1404-Reveil_Matrice_STM.elf 
-arm-none-eabi-objdump -h -S  1404-Reveil_Matrice_STM.elf  > "1404-Reveil_Matrice_STM.list"
    text	   data	    bss	    dec	    hex	filename
-  21880	    120	   4688	  26688	   6840	1404-Reveil_Matrice_STM.elf
+  23060	    120	   4688	  27868	   6cdc	1404-Reveil_Matrice_STM.elf
 Finished building: default.size.stdout
  
-Finished building: 1404-Reveil_Matrice_STM.list
- 
 
-13:07:33 Build Finished. 0 errors, 5 warnings. (took 1s.306ms)
+15:16:51 Build Finished. 0 errors, 0 warnings. (took 440ms)
 
