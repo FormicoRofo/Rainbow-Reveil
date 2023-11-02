@@ -450,9 +450,9 @@ Cette mesure est ajoutée à un offset, et sert ensuite de facteur qui diminue l
 	  }
 ```
 #### Tâches à faire
-À ce stade, le projet est à peu près complet. Il serait encore possible d'ajouter le watchdog, d'autres modes, ou d'optimiser le code. Cela dit, même en stoquant cinq sprites de 5x5 en RGBA sans compression non utilisés, mon utilisation de la ram est à 4,69KB/6KB (78%) et l'utilisation de la mémoire flash est de 22KB/32KB/
+À ce stade, le projet est à peu près complet. Il serait encore possible d'ajouter le watchdog, d'autres modes, ou d'optimiser le code. Cela dit, même en stoquant cinq sprites de 5x5 en RGBA sans compression non utilisés, mon utilisation de la ram est à 4,69KB/6KB (78%) et l'utilisation de la mémoire flash est de 22KB/32KB(70%). Je suis donc confortablement sous les limitations matérielles du microcontrôleur.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MDk5OTUxNCwzNTU0MjkyMTEsLTE3Mj
-A3ODY4NzIsMTk4NzY4NjI5NSwxMTQ0NTU1MTkxLDE0NzAyMDI1
-MDksMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEyN119
+eyJoaXN0b3J5IjpbODQ4MDg4MDcxLDM1NTQyOTIxMSwtMTcyMD
+c4Njg3MiwxOTg3Njg2Mjk1LDExNDQ1NTUxOTEsMTQ3MDIwMjUw
+OSwxMTQ0NTU1MTkxLC01MDg3NzQ3NTEsMzgzNjQzMTI3XX0=
 -->
