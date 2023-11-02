@@ -134,7 +134,7 @@ Pour avoir un arc-en-ciel, le plus simple est de se déplacer sur un disque HSV 
 Malheureusement pour fonctionner, notre affichage à besoin de valeurs RGB. Nous devons donc convertir des valeurs HSV en valeurs RGB.
 Sachant que nos valeurs de saturation seront toujours 255, on peut alors simplifier l'algorithme pour avoir uniquement les facteurs H (teinte) et V (luminosité, que nous utiliserons pour régler la luminosité de l'affichage) à prendre en charge.
 
-J'ai créé un nouveau fichier ``color.c`` qui rassemblera toutes les fonctions de gestion colorimétriques, et j'y ai écrit[^ChatGPT] :
+J'ai créé un nouveau fichier ``color.c`` qui rassemblera toutes les fonctions de gestion colorimétriques, et j'y ai écrit :
 ```c
 #include "includes.h"
 
@@ -383,27 +383,84 @@ void drawImage(ImageData* imageData, int x, int y, Canvas* canvas) {
 }
 ```
 
+### Journal de Développement - 01.11.2023
+#### ADC
+Aujourd'hui j'ai intégré l'ADC et la photodiode à mon projet. J'ai implémenté une nouvelle bibliothèque qui me permet de facilement prendre des mesures de luminosité.
+
+```c
+/*
+ * ADC.c
+ *
+ *  Created on: Nov 1, 2023
+ *      Author: alyvasseur
+ */
 
 
+#include "includes.h"
 
+extern ADC_HandleTypeDef hadc;
 
+uint8_t readADC(){
 
+	 HAL_ADC_Start(&hadc);
+	 HAL_ADC_PollForConversion(&hadc, 1);
+	 return HAL_ADC_GetValue(&hadc);
 
+}
 
+uint8_t flashReadADC(Canvas* canvas){
+	setWHOLEcolor( 0, 0, 0);
+	HAL_Delay(200);
+	uint8_t mesure = readADC();
+	sendCanvas(canvas);
+	return mesure;
+}
 
+```
 
+#### Gestion de la luminosité et de la réception de l'heure
 
+J'ai ajouté une variable bool à la fonction qui réceptionne l'heure. Celle ci informe le ``main()`` qu'une nouvelle heure est arrivée. Avec cette information, la luminosité est à nouveau mesurée. L'heure est affichée avec la conversion BCD.
+```c
+if(needMeasure){
+	facteurLuminosite = flashReadADC(&myCanvas) + LUM_CAL_OFFSET;
+	needMeasure = false;
+}
+```
 
+Cette mesure est ajoutée à un offset, et sert ensuite de facteur qui diminue la luminosité de l'affichage.
 
+```c
+/**********Background***************/
 
+	  for(uint8_t diag=1; diag<=23; diag++){
+		  colorDiagonal(&myCanvas, HSVtoPixel((RB_SPEED*H + (diag* 255 / 23))%255 , (facteurLuminosite*RB_MAX_LUX)/255), diag);
+	  }
 
+	  displayBCD(&myCanvas, 2, 3, Heures_D, 2, facteurLuminosite);
+	  displayBCD(&myCanvas, 5, 3, Heures_U, 4, facteurLuminosite);
+	  displayBCD(&myCanvas, 10, 3, Minutes_D, 4, facteurLuminosite);
+	  displayBCD(&myCanvas, 15, 3, Minutes_U, 4, facteurLuminosite);
 
+	  sendCanvas(&myCanvas);
 
+	  H++;
+	  if(!((RB_SPEED*H)%255)){
+		  H=0;
+	  }
+```
+#### Prochaines étapes :
+À ce stade, le projet est à peu près complet. Il serait encore possible d'ajouter le watchdog, d'autres modes, ou d'optimiser le code. Cela dit, même en stoquant cinq sprites de 5x5 en RGBA sans compression, mon utilisation de la ram est à 4,69KB/6KB (78%) et l'utilisation de la mémoire flash est de 22KB/32KB(70%). Je suis donc confortablement sous les limitations matérielles du microcontrôleur.
 
-## Notes de bas de page
-[^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
+### Journal de Développement - 02.11.2023
+#### Changement de plateforme
+Il a été envisagé par la classe de changer de plateforme pour avoir plus de RAM et de Flash à disposition. Personnellement je n'en ressens pas le besoin. Dans le doute, Eden, qui a accès à mon repo, a décidé d'effectuer un portage du code. Il n'a pas encore pu être testé. De mon côté, je préfère attendre d'avoir le matériel pour ne pas faire de bêtises en modifiant le .ioc du nouveau projet, ou de trouver un moyen de modifier l'ancien.
+
+#### Réparation de la carte commande
+Après une mesure à l'oscilloscope, la probable panne de ma carte commande semble avoir été trouvée. Cependant, une fois le composant remplacé (sa sortie se comporte comme attendue, le bus i2c est maintenant silencieux, et l'écran ne fonctionne plus. Il semblerait que j'ai endommagé le microcontrôleur. Peut-être que reflasher le programme résoudra le problème ?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjA3ODY4NzIsMTk4NzY4NjI5NSwxMT
-Q0NTU1MTkxLDE0NzAyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0
-NzUxLDM4MzY0MzEyN119
+eyJoaXN0b3J5IjpbLTIwODA1MDUxMDEsMTA4MTY0NjM2MCw4ND
+gwODgwNzEsMzU1NDI5MjExLC0xNzIwNzg2ODcyLDE5ODc2ODYy
+OTUsMTE0NDU1NTE5MSwxNDcwMjAyNTA5LDExNDQ1NTUxOTEsLT
+UwODc3NDc1MSwzODM2NDMxMjddfQ==
 -->
