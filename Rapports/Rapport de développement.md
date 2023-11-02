@@ -421,6 +421,11 @@ uint8_t flashReadADC(Canvas* canvas){
 #### Gestion de la luminosité et de la réception de l'heure
 
 J'ai ajouté une variable bool à la fonction qui réceptionne l'heure. Celle ci informe le ``main()`` qu'une nouvelle heure est arrivée. Avec cette information, la luminosité est à nouveau mesurée. L'heure est affichée avec la conversion BCD.
+``````
+
+Cette mesure est ajoutée à un offset, et sert ensuite de facteur qui diminue la luminosité de l'affichage.
+
+
 
 
 
@@ -438,7 +443,8 @@ J'ai ajouté une variable bool à la fonction qui réceptionne l'heure. Celle ci
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MDc4ODg4LDM1NTQyOTIxMSwtMTcyMD
-c4Njg3MiwxOTg3Njg2Mjk1LDExNDQ1NTUxOTEsMTQ3MDIwMjUw
-OSwxMTQ0NTU1MTkxLC01MDg3NzQ3NTEsMzgzNjQzMTI3XX0=
+eyJoaXN0b3J5IjpbLTE3MzU0NTUyMDgsMzU1NDI5MjExLC0xNz
+IwNzg2ODcyLDE5ODc2ODYyOTUsMTE0NDU1NTE5MSwxNDcwMjAy
+NTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMxMjddfQ
+==
 -->
