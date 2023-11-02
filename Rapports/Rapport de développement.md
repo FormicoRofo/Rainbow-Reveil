@@ -383,7 +383,7 @@ void drawImage(ImageData* imageData, int x, int y, Canvas* canvas) {
 }
 ```
 
-### Journal de Développement - 30.10.2023
+### Journal de Développement - 01.11.2023
 #### ADC
 Aujourd'hui j'ai intégré l'ADC et la photodiode à mon projet. J'ai implémenté une nouvelle bibliothèque qui me permet de facilement prendre des mesures de luminosité.
 
@@ -451,9 +451,13 @@ Cette mesure est ajoutée à un offset, et sert ensuite de facteur qui diminue l
 ```
 #### Prochaines étapes :
 À ce stade, le projet est à peu près complet. Il serait encore possible d'ajouter le watchdog, d'autres modes, ou d'optimiser le code. Cela dit, même en stoquant cinq sprites de 5x5 en RGBA sans compression, mon utilisation de la ram est à 4,69KB/6KB (78%) et l'utilisation de la mémoire flash est de 22KB/32KB(70%). Je suis donc confortablement sous les limitations matérielles du microcontrôleur.
+
+### Journal de Développement - 02.11.2023
+#### Changement de plateforme
+Il a été envisagé par la classe de changer de plateforme. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MTY0NjM2MCw4NDgwODgwNzEsMzU1ND
-I5MjExLC0xNzIwNzg2ODcyLDE5ODc2ODYyOTUsMTE0NDU1NTE5
-MSwxNDcwMjAyNTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzOD
-M2NDMxMjddfQ==
+eyJoaXN0b3J5IjpbLTEwNjMxNDQwNjYsMTA4MTY0NjM2MCw4ND
+gwODgwNzEsMzU1NDI5MjExLC0xNzIwNzg2ODcyLDE5ODc2ODYy
+OTUsMTE0NDU1NTE5MSwxNDcwMjAyNTA5LDExNDQ1NTUxOTEsLT
+UwODc3NDc1MSwzODM2NDMxMjddfQ==
 -->
