@@ -383,6 +383,7 @@ void drawImage(ImageData* imageData, int x, int y, Canvas* canvas) {
 }
 ```
 
+### Journal de Développement - 30.10.2023
 
 
 
@@ -403,7 +404,7 @@ void drawImage(ImageData* imageData, int x, int y, Canvas* canvas) {
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjA3ODY4NzIsMTk4NzY4NjI5NSwxMT
-Q0NTU1MTkxLDE0NzAyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0
-NzUxLDM4MzY0MzEyN119
+eyJoaXN0b3J5IjpbMzU1NDI5MjExLC0xNzIwNzg2ODcyLDE5OD
+c2ODYyOTUsMTE0NDU1NTE5MSwxNDcwMjAyNTA5LDExNDQ1NTUx
+OTEsLTUwODc3NDc1MSwzODM2NDMxMjddfQ==
 -->
