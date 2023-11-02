@@ -450,9 +450,9 @@ Cette mesure est ajoutée à un offset, et sert ensuite de facteur qui diminue l
 	  }
 ```
 #### Tâches à faire
-À ce stade, le projet est à peu près complet. Il serait encore possible d'ajouter le watchdog, d'autres modes, ou d'optimiser le code. 
+À ce stade, le projet est à peu près complet. Il serait encore possible d'ajouter le watchdog, d'autres modes, ou d'optimiser le code. Cela dit, même en stoquant cinq sprites de 5x5 en RGBA sans compression
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzU2NDY3NzMsMzU1NDI5MjExLC0xNz
+eyJoaXN0b3J5IjpbLTE4Njc5MzI4MTQsMzU1NDI5MjExLC0xNz
 IwNzg2ODcyLDE5ODc2ODYyOTUsMTE0NDU1NTE5MSwxNDcwMjAy
 NTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMxMjddfQ
 ==
