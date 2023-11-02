@@ -421,10 +421,34 @@ uint8_t flashReadADC(Canvas* canvas){
 #### Gestion de la luminosité et de la réception de l'heure
 
 J'ai ajouté une variable bool à la fonction qui réceptionne l'heure. Celle ci informe le ``main()`` qu'une nouvelle heure est arrivée. Avec cette information, la luminosité est à nouveau mesurée. L'heure est affichée avec la conversion BCD.
-``````
+```c
+if(needMeasure){
+	facteurLuminosite = flashReadADC(&myCanvas) + LUM_CAL_OFFSET;
+	needMeasure = false;
+}
+```
 
 Cette mesure est ajoutée à un offset, et sert ensuite de facteur qui diminue la luminosité de l'affichage.
 
+```c
+/**********Background***************/
+
+	  for(uint8_t diag=1; diag<=23; diag++){
+		  colorDiagonal(&myCanvas, HSVtoPixel((RB_SPEED*H + (diag* 255 / 23))%255 , (facteurLuminosite*RB_MAX_LUX)/255), diag);
+	  }
+
+	  displayBCD(&myCanvas, 2, 3, Heures_D, 2, facteurLuminosite);
+	  displayBCD(&myCanvas, 5, 3, Heures_U, 4, facteurLuminosite);
+	  displayBCD(&myCanvas, 10, 3, Minutes_D, 4, facteurLuminosite);
+	  displayBCD(&myCanvas, 15, 3, Minutes_U, 4, facteurLuminosite);
+
+	  sendCanvas(&myCanvas);
+
+	  H++;
+	  if(!((RB_SPEED*H)%255)){
+		  H=0;
+	  }
+```
 
 
 
@@ -443,8 +467,7 @@ Cette mesure est ajoutée à un offset, et sert ensuite de facteur qui diminue l
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzU0NTUyMDgsMzU1NDI5MjExLC0xNz
-IwNzg2ODcyLDE5ODc2ODYyOTUsMTE0NDU1NTE5MSwxNDcwMjAy
-NTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMxMjddfQ
-==
+eyJoaXN0b3J5IjpbMTY5MjE3MDc5NSwzNTU0MjkyMTEsLTE3Mj
+A3ODY4NzIsMTk4NzY4NjI5NSwxMTQ0NTU1MTkxLDE0NzAyMDI1
+MDksMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEyN119
 -->
