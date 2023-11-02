@@ -16,7 +16,9 @@
 #include "ws2812.h"
 #include "ADC.h"
 
+
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 #endif /* INC_INCLUDES_H_ */
