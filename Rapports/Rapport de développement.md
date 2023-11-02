@@ -450,9 +450,10 @@ Cette mesure est ajoutée à un offset, et sert ensuite de facteur qui diminue l
 	  }
 ```
 #### Tâches à faire
-À ce stade, le projet est à peu près complet. Il serait encore possible d'ajouter le watchdog, d'aures modes
+À ce stade, le projet est à peu près complet. Il serait encore possible d'ajouter le watchdog, d'autres modes, ou d'optimiser le code. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjY4MzAyLDM1NTQyOTIxMSwtMTcyMD
-c4Njg3MiwxOTg3Njg2Mjk1LDExNDQ1NTUxOTEsMTQ3MDIwMjUw
-OSwxMTQ0NTU1MTkxLC01MDg3NzQ3NTEsMzgzNjQzMTI3XX0=
+eyJoaXN0b3J5IjpbLTE1MzU2NDY3NzMsMzU1NDI5MjExLC0xNz
+IwNzg2ODcyLDE5ODc2ODYyOTUsMTE0NDU1NTE5MSwxNDcwMjAy
+NTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMxMjddfQ
+==
 -->
