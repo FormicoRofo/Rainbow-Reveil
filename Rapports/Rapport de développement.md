@@ -457,9 +457,9 @@ Cette mesure est ajoutée à un offset, et sert ensuite de facteur qui diminue l
 Il a été envisagé par la classe de changer de plateforme pour avoir plus de RAM et de Flash à disposition. Personnellement je n'en ressens pas le besoin. Dans le doute, Eden, qui a accès à mon repo, a décidé d'effectuer un portage du code. Il n'a pas encore pu être testé. De mon côté, je préfère attendre d'avoir le matériel pour ne pas faire de bêtises en modifiant le .ioc du nouveau projet, ou de trouver un moyen de modifier l'ancien.
 
 #### Réparation de la carte commande
-Après une mesure à l'oscillo,
+Après une mesure à l'oscilloscope, la probable panne de ma carte commande semble avoir été trouvée. Cependant, une fois le composant remplacé (sa sortie se comporte comme attendue, le bus i2c est maintenant silencieux, et l'écran ne fonctionne plus. Il semblerait que j'ai 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTM2MDIxNTQsMTA4MTY0NjM2MCw4ND
+eyJoaXN0b3J5IjpbLTE3MTI1OTk3NDUsMTA4MTY0NjM2MCw4ND
 gwODgwNzEsMzU1NDI5MjExLC0xNzIwNzg2ODcyLDE5ODc2ODYy
 OTUsMTE0NDU1NTE5MSwxNDcwMjAyNTA5LDExNDQ1NTUxOTEsLT
 UwODc3NDc1MSwzODM2NDMxMjddfQ==
