@@ -134,7 +134,7 @@ Pour avoir un arc-en-ciel, le plus simple est de se déplacer sur un disque HSV 
 Malheureusement pour fonctionner, notre affichage à besoin de valeurs RGB. Nous devons donc convertir des valeurs HSV en valeurs RGB.
 Sachant que nos valeurs de saturation seront toujours 255, on peut alors simplifier l'algorithme pour avoir uniquement les facteurs H (teinte) et V (luminosité, que nous utiliserons pour régler la luminosité de l'affichage) à prendre en charge.
 
-J'ai créé un nouveau fichier ``color.c`` qui rassemblera toutes les fonctions de gestion colorimétriques, et j'y ai écrit[^ChatGPT] :
+J'ai créé un nouveau fichier ``color.c`` qui rassemblera toutes les fonctions de gestion colorimétriques, et j'y ai écrit :
 ```c
 #include "includes.h"
 
@@ -449,25 +449,9 @@ Cette mesure est ajoutée à un offset, et sert ensuite de facteur qui diminue l
 		  H=0;
 	  }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Notes de bas de page
-[^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MjE3MDc5NSwzNTU0MjkyMTEsLTE3Mj
-A3ODY4NzIsMTk4NzY4NjI5NSwxMTQ0NTU1MTkxLDE0NzAyMDI1
-MDksMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEyN119
+eyJoaXN0b3J5IjpbLTE2ODAyOTkwMzMsMzU1NDI5MjExLC0xNz
+IwNzg2ODcyLDE5ODc2ODYyOTUsMTE0NDU1NTE5MSwxNDcwMjAy
+NTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMxMjddfQ
+==
 -->
