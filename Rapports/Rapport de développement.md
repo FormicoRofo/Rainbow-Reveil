@@ -454,10 +454,10 @@ Cette mesure est ajoutée à un offset, et sert ensuite de facteur qui diminue l
 
 ### Journal de Développement - 02.11.2023
 #### Changement de plateforme
-Il a été envisagé par la classe de changer de plateforme. 
+Il a été envisagé par la classe de changer de plateforme pour avoir plus de RAM et de Flash à disposition. Personnellement je n'en ressens pas le besoin. Dans le doute, Eden, qui a accès à mon repo, a décidé d'effectuer un portage du code. Il n'a pas encor
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjMxNDQwNjYsMTA4MTY0NjM2MCw4ND
-gwODgwNzEsMzU1NDI5MjExLC0xNzIwNzg2ODcyLDE5ODc2ODYy
-OTUsMTE0NDU1NTE5MSwxNDcwMjAyNTA5LDExNDQ1NTUxOTEsLT
-UwODc3NDc1MSwzODM2NDMxMjddfQ==
+eyJoaXN0b3J5IjpbMTI3ODQxNTAxMSwxMDgxNjQ2MzYwLDg0OD
+A4ODA3MSwzNTU0MjkyMTEsLTE3MjA3ODY4NzIsMTk4NzY4NjI5
+NSwxMTQ0NTU1MTkxLDE0NzAyMDI1MDksMTE0NDU1NTE5MSwtNT
+A4Nzc0NzUxLDM4MzY0MzEyN119
 -->
