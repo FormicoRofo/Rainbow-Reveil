@@ -113,7 +113,7 @@ void drawImage(ImageData* imageData, int x, int y, Canvas* canvas) {
 /*********  modif EFV pour alpha toujours MAX  ****************/
     for (int imgY = 0; imgY < imageData->height; imgY++) {
         for (int imgX = 0; imgX < imageData->width; imgX++) {
-            uint8_t* pixel = &imageData->data[(imgY * imageData->width + imgX)];  // BGR format
+            uint8_t* pixel = &imageData->data[(imgY * imageData->width + imgX) * 3];  // BGR format
 /* alpha always max
             // Ignore les pixels totalement transparents (canal alpha à zéro)
             if (pixel[3] == 0x00) {
@@ -131,9 +131,9 @@ void drawImage(ImageData* imageData, int x, int y, Canvas* canvas) {
 
                 // Appliquez la couleur de l'image avec la transparence sur le pixel du canevas
                 // Assurez-vous d'ajuster les canaux alpha en conséquence
-                canvasPixel->R = pixel[0] & 0xE0;
-                canvasPixel->G = (pixel[0] & 0x1B)<<3;
-                canvasPixel->B = (pixel[0] & 0x03)<<5;
+                canvasPixel->R = pixel[2];
+                canvasPixel->G = pixel[1];
+                canvasPixel->B = pixel[0];
                 // Appliquer le masque pour forcer les valeurs à être paires
                 canvasPixel->R &= 0xFE; // Le masque 0xFE force le dernier bit à 0.
                 canvasPixel->G &= 0xFE;

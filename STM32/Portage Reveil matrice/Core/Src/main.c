@@ -168,15 +168,54 @@ int main(void)
 
 	  	  displayBCD(&myCanvas, 8, 3, H>>4, 4);
 
-	  	  switch((H/4)%6){
-	  	  case 0 : pacManSprite = &Rick0; break;
-	  	  case 1 : pacManSprite = &Rick6; break;
-	  	  /*case 2 : pacManSprite = &Rick12; break;
-	  	case 3 : pacManSprite = &Rick18; break;
-	  	case 4 : pacManSprite = &Rick24; break;
-	  	case 5 : pacManSprite = &Rick30; break;
-	  	case 6 : pacManSprite = &Rick36; break;
-	  	case 7 : pacManSprite = &Rick42; break;*/
+	  	switch((H/2)%47){
+	  		  	  case 0 : pacManSprite = &Rick0; break;
+	  		  	  case 1 : pacManSprite = &Rick1; break;
+	  		  	  case 2 : pacManSprite = &Rick2; break;
+	  		  	  case 3 : pacManSprite = &Rick3; break;
+	  		  	  case 4 : pacManSprite = &Rick4; break;
+	  		  	  case 5 : pacManSprite = &Rick5; break;
+	  		  	  case 6 : pacManSprite = &Rick6; break;
+	  		  	  case 7 : pacManSprite = &Rick7; break;
+	  		  	  case 8 : pacManSprite = &Rick8; break;
+	  		  	  case 9 : pacManSprite = &Rick9; break;
+	  		  	  case 10 : pacManSprite = &Rick10; break;
+	  		  	  case 11 : pacManSprite = &Rick11; break;
+	  		  	  case 12 : pacManSprite = &Rick12; break;
+	  		  	  case 13 : pacManSprite = &Rick13; break;
+	  		  	case 14 : pacManSprite = &Rick14; break;
+	  		  	case 15 : pacManSprite = &Rick15; break;
+	  		  	case 16 : pacManSprite = &Rick16; break;
+	  		  	case 17 : pacManSprite = &Rick17; break;
+	  		  	case 18 : pacManSprite = &Rick18; break;
+	  		  	case 19 : pacManSprite = &Rick19; break;
+	  		  	case 20 : pacManSprite = &Rick20; break;
+	  		  	case 21 : pacManSprite = &Rick21; break;
+	  		  	case 22 : pacManSprite = &Rick22; break;
+	  		  	case 23 : pacManSprite = &Rick23; break;
+	  		  	case 24 : pacManSprite = &Rick24; break;
+	  		  	case 25 : pacManSprite = &Rick25; break;
+	  		  	case 26 : pacManSprite = &Rick26; break;
+	  		  	case 27 : pacManSprite = &Rick27; break;
+	  		  	case 28 : pacManSprite = &Rick28; break;
+	  		  	case 29 : pacManSprite = &Rick29; break;
+	  		  	case 30 : pacManSprite = &Rick30; break;
+	  		  	case 31 : pacManSprite = &Rick31; break;
+	  		  	case 32 : pacManSprite = &Rick32; break;
+	  		  	case 33 : pacManSprite = &Rick33; break;
+	  		  	case 34 : pacManSprite = &Rick34; break;
+	  		  	case 35 : pacManSprite = &Rick35; break;
+	  		  	case 36 : pacManSprite = &Rick36; break;
+	  		  	case 37 : pacManSprite = &Rick37; break;
+	  		  	case 38 : pacManSprite = &Rick38; break;
+	  		  	case 39 : pacManSprite = &Rick39; break;
+	  		  	case 40 : pacManSprite = &Rick40; break;
+	  		  	case 41 : pacManSprite = &Rick41; break;
+	  		  	case 42 : pacManSprite = &Rick42; break;
+	  		  	case 43 : pacManSprite = &Rick43; break;
+	  		  	case 44 : pacManSprite = &Rick44; break;
+	  		  	case 45 : pacManSprite = &Rick45; break;
+	  		  	case 46 : pacManSprite = &Rick46; break;
 
 	  	  }
 	  	  drawImage(pacManSprite, 1, 1, &myCanvas);
