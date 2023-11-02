@@ -388,10 +388,39 @@ void drawImage(ImageData* imageData, int x, int y, Canvas* canvas) {
 Aujourd'hui j'ai intégré l'ADC et la photodiode à mon projet. J'ai implémenté une nouvelle bibliothèque qui me permet de facilement prendre des mesures de luminosité.
 
 ```c
+/*
+ * ADC.c
+ *
+ *  Created on: Nov 1, 2023
+ *      Author: alyvasseur
+ */
+
+
+#include "includes.h"
+
+extern ADC_HandleTypeDef hadc;
+
+uint8_t readADC(){
+
+	 HAL_ADC_Start(&hadc);
+	 HAL_ADC_PollForConversion(&hadc, 1);
+	 return HAL_ADC_GetValue(&hadc);
+
+}
+
+uint8_t flashReadADC(Canvas* canvas){
+	setWHOLEcolor( 0, 0, 0);
+	HAL_Delay(200);
+	uint8_t mesure = readADC();
+	sendCanvas(canvas);
+	return mesure;
+}
 
 ```
 
+#### Gestion de la luminosité et de la réception de l'heure
 
+J'ai ajouté une variable bool à la fonction qui réceptionne l'heure. J'ai é
 
 
 
@@ -409,7 +438,8 @@ Aujourd'hui j'ai intégré l'ADC et la photodiode à mon projet. J'ai implément
 ## Notes de bas de page
 [^ChatGPT]:Code réalisé en grande partie ou en tout par ChatGPT
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MzkzODE4NiwzNTU0MjkyMTEsLTE3Mj
-A3ODY4NzIsMTk4NzY4NjI5NSwxMTQ0NTU1MTkxLDE0NzAyMDI1
-MDksMTE0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEyN119
+eyJoaXN0b3J5IjpbLTE2MDYwOTY2MTcsMzU1NDI5MjExLC0xNz
+IwNzg2ODcyLDE5ODc2ODYyOTUsMTE0NDU1NTE5MSwxNDcwMjAy
+NTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMxMjddfQ
+==
 -->
