@@ -1,0 +1,7 @@
+canvas.c:9:6:setCanvasColor	2
+canvas.c:18:6:sendCanvas	2
+canvas.c:25:8:getPixel	5
+canvas.c:34:6:colorDiagonal	5
+canvas.c:52:6:drawRectangle	13
+canvas.c:76:6:displayBCD	10
+canvas.c:108:6:drawImage	9
