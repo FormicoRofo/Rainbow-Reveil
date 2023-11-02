@@ -454,10 +454,13 @@ Cette mesure est ajoutée à un offset, et sert ensuite de facteur qui diminue l
 
 ### Journal de Développement - 02.11.2023
 #### Changement de plateforme
-Il a été envisagé par la classe de changer de plateforme pour avoir plus de RAM et de Flash à disposition. Personnellement je n'en ressens pas le besoin. Dans le doute, Eden, qui a accès à mon repo, a décidé d'effectuer un portage du code. Il n'a pas encor
+Il a été envisagé par la classe de changer de plateforme pour avoir plus de RAM et de Flash à disposition. Personnellement je n'en ressens pas le besoin. Dans le doute, Eden, qui a accès à mon repo, a décidé d'effectuer un portage du code. Il n'a pas encore pu être testé. De mon côté, je préfère attendre d'avoir le matériel pour ne pas faire de bêtises en modifiant le .ioc du nouveau projet, ou de trouver un moyen de modifier l'ancien.
+
+#### Réparation de la carte commande
+Après une mesure à l'oscillo,
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3ODQxNTAxMSwxMDgxNjQ2MzYwLDg0OD
-A4ODA3MSwzNTU0MjkyMTEsLTE3MjA3ODY4NzIsMTk4NzY4NjI5
-NSwxMTQ0NTU1MTkxLDE0NzAyMDI1MDksMTE0NDU1NTE5MSwtNT
-A4Nzc0NzUxLDM4MzY0MzEyN119
+eyJoaXN0b3J5IjpbLTE3OTM2MDIxNTQsMTA4MTY0NjM2MCw4ND
+gwODgwNzEsMzU1NDI5MjExLC0xNzIwNzg2ODcyLDE5ODc2ODYy
+OTUsMTE0NDU1NTE5MSwxNDcwMjAyNTA5LDExNDQ1NTUxOTEsLT
+UwODc3NDc1MSwzODM2NDMxMjddfQ==
 -->
