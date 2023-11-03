@@ -35,34 +35,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := Reveil_STM32-Matrice
+BUILD_ARTIFACT_NAME := Portage Reveil matrice
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-Reveil_STM32-Matrice.elf \
+Portage\ Reveil\ matrice.elf \
 
 MAP_FILES += \
-Reveil_STM32-Matrice.map \
+Portage\ Reveil\ matrice.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-Reveil_STM32-Matrice.list \
+Portage\ Reveil\ matrice.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: Reveil_STM32-Matrice.elf secondary-outputs
+main-build: Portage\ Reveil\ matrice.elf secondary-outputs
 
 # Tool invocations
-Reveil_STM32-Matrice.elf Reveil_STM32-Matrice.map: $(OBJS) $(USER_OBJS) C:\ST\Reveil_STM32-Matrice\STM32L432KCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Reveil_STM32-Matrice.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\ST\Reveil_STM32-Matrice\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Reveil_STM32-Matrice.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Portage\ Reveil\ matrice.elf Portage\ Reveil\ matrice.map: $(OBJS) $(USER_OBJS) C:\Users\alyvasseur\Education\ Vaud\ETML_FLO-22-24_Teams\ -\ Vasseur\MicroControleur\Rainbow-Reveil\STM32\Portage\ Reveil\ matrice\STM32L432KCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Portage Reveil matrice.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\alyvasseur\Education Vaud\ETML_FLO-22-24_Teams - Vasseur\MicroControleur\Rainbow-Reveil\STM32\Portage Reveil matrice\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Portage Reveil matrice.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -71,14 +71,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Reveil_STM32-Matrice.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Reveil_STM32-Matrice.list"
+Portage\ Reveil\ matrice.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Portage Reveil matrice.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) Reveil_STM32-Matrice.elf Reveil_STM32-Matrice.list Reveil_STM32-Matrice.map default.size.stdout
+	-$(RM) Portage\ Reveil\ matrice.elf Portage\ Reveil\ matrice.list Portage\ Reveil\ matrice.map Portage\\ Reveil\\ matrice.elf default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

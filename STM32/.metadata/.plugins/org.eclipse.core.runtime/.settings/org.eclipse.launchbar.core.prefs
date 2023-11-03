@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1404-Reveil_Matrice Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1404-Reveil_Matrice_STM Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1404-Reveil_Matrice Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1404-Reveil_Matrice_STM Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Reveil_STM32-Matrice
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1404-Reveil_Matrice\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1404-Reveil_Matrice\ Debug/activeLaunchTarget=null\:---

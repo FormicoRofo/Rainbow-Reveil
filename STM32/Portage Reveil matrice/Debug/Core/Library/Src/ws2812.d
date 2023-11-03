@@ -1,5 +1,5 @@
 Core/Library/Src/ws2812.o: ../Core/Library/Src/ws2812.c \
- C:/ST/Reveil_STM32-Matrice/Core/Library/Inc/ws2812.h \
+ C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/Portage\ Reveil\ matrice/Core/Library/Inc/ws2812.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
  ../Core/Inc/stm32l4xx_hal_conf.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h \
@@ -31,7 +31,7 @@ Core/Library/Src/ws2812.o: ../Core/Library/Src/ws2812.c \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
-C:/ST/Reveil_STM32-Matrice/Core/Library/Inc/ws2812.h:
+C:/Users/alyvasseur/Education\ Vaud/ETML_FLO-22-24_Teams\ -\ Vasseur/MicroControleur/Rainbow-Reveil/STM32/Portage\ Reveil\ matrice/Core/Library/Inc/ws2812.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 ../Core/Inc/stm32l4xx_hal_conf.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h:
