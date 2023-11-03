@@ -62,7 +62,7 @@ extern ImageData Rick42	;
 extern ImageData Rick43	;
 extern ImageData Rick44	;
 extern ImageData Rick45	;
-extern ImageData Rick46	;/*
+extern ImageData Rick46	;
 extern ImageData Rick47	;
 extern ImageData Rick48	;
 extern ImageData Rick49	;
@@ -115,7 +115,7 @@ extern ImageData Rick95	;
 extern ImageData Rick96	;
 extern ImageData Rick97	;
 extern ImageData Rick98	;
-extern ImageData Rick99 ;*/
+extern ImageData Rick99 ;
 
 
 
