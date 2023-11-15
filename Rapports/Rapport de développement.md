@@ -5,7 +5,7 @@
 L'objectif est de créer un affichage à fond arc-en-ciel flou (pas de palette prédéfinie) défilante diagonale, pour donner une esthétique similaire aux périphériques RGB.  
 ![Clavier arc-en-ciel](https://media.tenor.com/9Gp-SBjrjj4AAAAC/rgb-keyboard-neon-lights.gif)   
 Ensuite, sur ce fond arc-en-ciel, l'idée est d'afficher l'heure de manière assez standard, soit en noir, soit en blanc, selon ce qui se voit le mieux et est le plus esthétique.
-## Structure générale
+### Structure générale
 ```mermaid
 graph LR
 subgraph uCa[uC affichage]
@@ -471,8 +471,13 @@ Aujourd'hui le principal travail de la journée, en collaboration avec Eden, a �
 
 ### Journal de Développement - 05.11.2023
 Après une semaine et deux jours d'absence maladie, je suis de retour. Le module touche à sa fin. Je me concentre donc sur la finalisation du rapport. Comme demandé, j'ai crée un Structogramme de la bibliothèque ws2812, et j'ai généré le rapport de configuration hardware du STM32. Ces deux documents se trouvent dans le même dossier que ce document (en version informatique) ou en annexes (en version papier). Il est conseillé de consulter la version informatique car les commentaires du Structogramme ne sont pas accessibles sur la version papier.
+
+## Annexes
+
+ 1. List item
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMjQ3NTI5LC0yMDI3ODY4MjU4LC0zMj
+eyJoaXN0b3J5IjpbNjUxOTY2NTA2LC0yMDI3ODY4MjU4LC0zMj
 Y3NDkwMzYsLTgxOTQwNDA0OCwzOTk5ODk3MTYsMTAzNjYwMDAw
 MiwzOTk5ODk3MTYsMTAzNjYwMDAwMiw4MjQwMTQ3MjMsMTAzNj
 YwMDAwMiwtMjA4MDUwNTEwMSwxMDgxNjQ2MzYwLDg0ODA4ODA3
