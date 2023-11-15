@@ -1,6 +1,9 @@
 # Journal de développement réveil 
 Document 1404.3500.00
 
+## Table des matières
+
+
 ## Design général
 L'objectif est de créer un affichage à fond arc-en-ciel flou (pas de palette prédéfinie) défilante diagonale, pour donner une esthétique similaire aux périphériques RGB.  
 ![Clavier arc-en-ciel](https://media.tenor.com/9Gp-SBjrjj4AAAAC/rgb-keyboard-neon-lights.gif)   
@@ -478,11 +481,11 @@ Après une semaine et deux jours d'absence maladie, je suis de retour. Le module
  2. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MTIxOTU1MiwtMjAyNzg2ODI1OCwtMz
-I2NzQ5MDM2LC04MTk0MDQwNDgsMzk5OTg5NzE2LDEwMzY2MDAw
-MDIsMzk5OTg5NzE2LDEwMzY2MDAwMDIsODI0MDE0NzIzLDEwMz
-Y2MDAwMDIsLTIwODA1MDUxMDEsMTA4MTY0NjM2MCw4NDgwODgw
-NzEsMzU1NDI5MjExLC0xNzIwNzg2ODcyLDE5ODc2ODYyOTUsMT
-E0NDU1NTE5MSwxNDcwMjAyNTA5LDExNDQ1NTUxOTEsLTUwODc3
-NDc1MV19
+eyJoaXN0b3J5IjpbMzU3MzQzODUsLTIwMjc4NjgyNTgsLTMyNj
+c0OTAzNiwtODE5NDA0MDQ4LDM5OTk4OTcxNiwxMDM2NjAwMDAy
+LDM5OTk4OTcxNiwxMDM2NjAwMDAyLDgyNDAxNDcyMywxMDM2Nj
+AwMDAyLC0yMDgwNTA1MTAxLDEwODE2NDYzNjAsODQ4MDg4MDcx
+LDM1NTQyOTIxMSwtMTcyMDc4Njg3MiwxOTg3Njg2Mjk1LDExND
+Q1NTUxOTEsMTQ3MDIwMjUwOSwxMTQ0NTU1MTkxLC01MDg3NzQ3
+NTFdfQ==
 -->
