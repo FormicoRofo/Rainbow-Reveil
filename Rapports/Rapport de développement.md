@@ -463,9 +463,11 @@ Après une mesure à l'oscilloscope, la probable panne de ma carte commande semb
 ### Journal de Développement - 03.11.2023
 Aujourd'hui le principal travail de la journée, en collaboration avec Eden, a été le portage du projet sur un nouveau Nucléo (le L432KC) pour bénéficier de plus de mémoire et de RAM. J'ai appris à Eden à utiliser GitHub et GitKraken (débutant moi même), mais nous avons fini par les deux avoir un dépôt fonctionnel, le sien étant un fork du mien, mais ayant merge ensuite le sien dans le mien.
 
-![enter image description here](%3Ca%20href=%22https://ibb.co/b5m2yZf%22%3E%3Cimg%20src=%22https://i.ibb.co/N2CmkP4/image.png%22%20alt=%22image%22%20border=%220%22%3E%3C/a%3E)
+![Diagramme des Commit et merge entre Eden et moi](https://i.ibb.co/N2CmkP4/image.png)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MjIwNjk2OCwtMjA4MDUwNTEwMSwxMD
+eyJoaXN0b3J5IjpbLTcyOTI3NDQ4MywtMjA4MDUwNTEwMSwxMD
 gxNjQ2MzYwLDg0ODA4ODA3MSwzNTU0MjkyMTEsLTE3MjA3ODY4
 NzIsMTk4NzY4NjI5NSwxMTQ0NTU1MTkxLDE0NzAyMDI1MDksMT
 E0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEyN119
