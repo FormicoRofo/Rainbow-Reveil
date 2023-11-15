@@ -1,5 +1,5 @@
 # Journal de développement réveil 
-
+Document 1404.3500.00
 
 ## Design général
 L'objectif est de créer un affichage à fond arc-en-ciel flou (pas de palette prédéfinie) défilante diagonale, pour donner une esthétique similaire aux périphériques RGB.  
@@ -474,14 +474,15 @@ Après une semaine et deux jours d'absence maladie, je suis de retour. Le module
 
 ## Annexes
 
- 1. List item
+ 1. Rapport de configuration Hardware
+ 2. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUxOTY2NTA2LC0yMDI3ODY4MjU4LC0zMj
-Y3NDkwMzYsLTgxOTQwNDA0OCwzOTk5ODk3MTYsMTAzNjYwMDAw
-MiwzOTk5ODk3MTYsMTAzNjYwMDAwMiw4MjQwMTQ3MjMsMTAzNj
-YwMDAwMiwtMjA4MDUwNTEwMSwxMDgxNjQ2MzYwLDg0ODA4ODA3
-MSwzNTU0MjkyMTEsLTE3MjA3ODY4NzIsMTk4NzY4NjI5NSwxMT
-Q0NTU1MTkxLDE0NzAyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0
-NzUxXX0=
+eyJoaXN0b3J5IjpbMTY2MTIxOTU1MiwtMjAyNzg2ODI1OCwtMz
+I2NzQ5MDM2LC04MTk0MDQwNDgsMzk5OTg5NzE2LDEwMzY2MDAw
+MDIsMzk5OTg5NzE2LDEwMzY2MDAwMDIsODI0MDE0NzIzLDEwMz
+Y2MDAwMDIsLTIwODA1MDUxMDEsMTA4MTY0NjM2MCw4NDgwODgw
+NzEsMzU1NDI5MjExLC0xNzIwNzg2ODcyLDE5ODc2ODYyOTUsMT
+E0NDU1NTE5MSwxNDcwMjAyNTA5LDExNDQ1NTUxOTEsLTUwODc3
+NDc1MV19
 -->
