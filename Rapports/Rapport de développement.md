@@ -1,3 +1,7 @@
+[Example](#example)
+
+
+
 # Journal de développement réveil 
 ## Design général
 L'objectif est de créer un affichage à fond arc-en-ciel flou (pas de palette prédéfinie) défilante diagonale, pour donner une esthétique similaire aux périphériques RGB.  
@@ -468,8 +472,9 @@ Aujourd'hui le principal travail de la journée, en collaboration avec Eden, a �
 ### Journal de Développement - 05.11.2023
 Après une semaine et deux jours d'absence maladie, je suis de retour. Le module touche à sa fin. Je me concentre donc sur la finalisation du rapport. Comme demandé, j'ai crée un Structogramme de la bibliothèque ws2812, et j'ai généré le rapport de configuration hardware du STM32. Ces deux documents se trouvent dans le même dossier que ce document (en version informatique) ou en annexes (en version papier). Il est conseillé de consulter la version informatique car les commentaires du Structogramme ne sont pas accessibles sur la version papier.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjYwMDAwMiwtMjA4MDUwNTEwMSwxMD
-gxNjQ2MzYwLDg0ODA4ODA3MSwzNTU0MjkyMTEsLTE3MjA3ODY4
-NzIsMTk4NzY4NjI5NSwxMTQ0NTU1MTkxLDE0NzAyMDI1MDksMT
-E0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEyN119
+eyJoaXN0b3J5IjpbMTYxOTkyNjE1OCwxMDM2NjAwMDAyLC0yMD
+gwNTA1MTAxLDEwODE2NDYzNjAsODQ4MDg4MDcxLDM1NTQyOTIx
+MSwtMTcyMDc4Njg3MiwxOTg3Njg2Mjk1LDExNDQ1NTUxOTEsMT
+Q3MDIwMjUwOSwxMTQ0NTU1MTkxLC01MDg3NzQ3NTEsMzgzNjQz
+MTI3XX0=
 -->
