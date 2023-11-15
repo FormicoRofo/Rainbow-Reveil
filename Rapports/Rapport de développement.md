@@ -383,7 +383,7 @@ void drawImage(ImageData* imageData, int x, int y, Canvas* canvas) {
     }
 }
 ```
-## Gestion de l'ADC et de la r
+## Gestion de l'ADC et de la réception UART
 ### Journal de Développement - 01.11.2023
 #### ADC
 Aujourd'hui j'ai intégré l'ADC et la photodiode à mon projet. J'ai implémenté une nouvelle bibliothèque qui me permet de facilement prendre des mesures de luminosité.
@@ -461,15 +461,18 @@ Il a été envisagé par la classe de changer de plateforme pour avoir plus de R
 Après une mesure à l'oscilloscope, la probable panne de ma carte commande semble avoir été trouvée. Cependant, une fois le composant remplacé (sa sortie se comporte comme attendue, le bus i2c est maintenant silencieux, et l'écran ne fonctionne plus. Il semblerait que j'ai endommagé le microcontrôleur. Peut-être que reflasher le programme résoudra le problème ?
 
 
+## Portage sur L432KC
 ### Journal de Développement - 03.11.2023
 Aujourd'hui le principal travail de la journée, en collaboration avec Eden, a été le portage du projet sur un nouveau Nucléo (le L432KC) pour bénéficier de plus de mémoire et de RAM. J'ai appris à Eden à utiliser GitHub et GitKraken (débutant moi même), mais nous avons fini par les deux avoir un dépôt fonctionnel, le sien étant un fork du mien, mais ayant merge ensuite le sien dans le mien.
 
 ![Diagramme des Commit et merge entre Eden et moi](https://i.ibb.co/N2CmkP4/image.png)
 
+ ## Conclusion
+
 ### Journal de Développement - 05.11.2023
 Après une semaine et deux jours d'absence maladie, je suis de retour. Le module touche à sa fin. Je me concentre donc sur la finalisation du rapport. Comme demandé, j'ai crée un Structogramme de la bibliothèque ws2812, et j'ai généré le rapport de configuration hardware du STM32. Ces deux documents se trouvent dans le même dossier que ce document (en version informatique) ou en annexes (en version papier). Il est conseillé de consulter la version informatique car les commentaires du Structogramme ne sont pas accessibles sur la version papier.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEzOTI5MDk2LC0yMDI3ODY4MjU4LC0zMj
+eyJoaXN0b3J5IjpbLTgwMjQ3NTI5LC0yMDI3ODY4MjU4LC0zMj
 Y3NDkwMzYsLTgxOTQwNDA0OCwzOTk5ODk3MTYsMTAzNjYwMDAw
 MiwzOTk5ODk3MTYsMTAzNjYwMDAwMiw4MjQwMTQ3MjMsMTAzNj
 YwMDAwMiwtMjA4MDUwNTEwMSwxMDgxNjQ2MzYwLDg0ODA4ODA3
