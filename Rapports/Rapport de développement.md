@@ -1,5 +1,6 @@
 # Journal de développement réveil 
-[TOC]
+
+
 ## Design général
 L'objectif est de créer un affichage à fond arc-en-ciel flou (pas de palette prédéfinie) défilante diagonale, pour donner une esthétique similaire aux périphériques RGB.  
 ![Clavier arc-en-ciel](https://media.tenor.com/9Gp-SBjrjj4AAAAC/rgb-keyboard-neon-lights.gif)   
@@ -469,10 +470,11 @@ Aujourd'hui le principal travail de la journée, en collaboration avec Eden, a �
 ### Journal de Développement - 05.11.2023
 Après une semaine et deux jours d'absence maladie, je suis de retour. Le module touche à sa fin. Je me concentre donc sur la finalisation du rapport. Comme demandé, j'ai crée un Structogramme de la bibliothèque ws2812, et j'ai généré le rapport de configuration hardware du STM32. Ces deux documents se trouvent dans le même dossier que ce document (en version informatique) ou en annexes (en version papier). Il est conseillé de consulter la version informatique car les commentaires du Structogramme ne sont pas accessibles sur la version papier.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNjc0OTAzNiwtODE5NDA0MDQ4LDM5OT
-k4OTcxNiwxMDM2NjAwMDAyLDM5OTk4OTcxNiwxMDM2NjAwMDAy
-LDgyNDAxNDcyMywxMDM2NjAwMDAyLC0yMDgwNTA1MTAxLDEwOD
-E2NDYzNjAsODQ4MDg4MDcxLDM1NTQyOTIxMSwtMTcyMDc4Njg3
-MiwxOTg3Njg2Mjk1LDExNDQ1NTUxOTEsMTQ3MDIwMjUwOSwxMT
-Q0NTU1MTkxLC01MDg3NzQ3NTEsMzgzNjQzMTI3XX0=
+eyJoaXN0b3J5IjpbLTIwMjc4NjgyNTgsLTMyNjc0OTAzNiwtOD
+E5NDA0MDQ4LDM5OTk4OTcxNiwxMDM2NjAwMDAyLDM5OTk4OTcx
+NiwxMDM2NjAwMDAyLDgyNDAxNDcyMywxMDM2NjAwMDAyLC0yMD
+gwNTA1MTAxLDEwODE2NDYzNjAsODQ4MDg4MDcxLDM1NTQyOTIx
+MSwtMTcyMDc4Njg3MiwxOTg3Njg2Mjk1LDExNDQ1NTUxOTEsMT
+Q3MDIwMjUwOSwxMTQ0NTU1MTkxLC01MDg3NzQ3NTEsMzgzNjQz
+MTI3XX0=
 -->
