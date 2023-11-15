@@ -465,9 +465,10 @@ Aujourd'hui le principal travail de la journée, en collaboration avec Eden, a �
 
 ![Diagramme des Commit et merge entre Eden et moi](https://i.ibb.co/N2CmkP4/image.png)
 
-
+### Journal de Développement - 05.11.2023
+Après une semaine et deux jours d'absence maladie, je suis de retour. Le module toucha
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyOTI3NDQ4MywtMjA4MDUwNTEwMSwxMD
+eyJoaXN0b3J5IjpbMTI0ODc0MjgzNiwtMjA4MDUwNTEwMSwxMD
 gxNjQ2MzYwLDg0ODA4ODA3MSwzNTU0MjkyMTEsLTE3MjA3ODY4
 NzIsMTk4NzY4NjI5NSwxMTQ0NTU1MTkxLDE0NzAyMDI1MDksMT
 E0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEyN119
