@@ -458,9 +458,13 @@ Il a été envisagé par la classe de changer de plateforme pour avoir plus de R
 
 #### Réparation de la carte commande
 Après une mesure à l'oscilloscope, la probable panne de ma carte commande semble avoir été trouvée. Cependant, une fois le composant remplacé (sa sortie se comporte comme attendue, le bus i2c est maintenant silencieux, et l'écran ne fonctionne plus. Il semblerait que j'ai endommagé le microcontrôleur. Peut-être que reflasher le programme résoudra le problème ?
+
+
+### Journal de Développement - 03.11.2023
+Aujourd'hui le principal travail de la journ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODA1MDUxMDEsMTA4MTY0NjM2MCw4ND
-gwODgwNzEsMzU1NDI5MjExLC0xNzIwNzg2ODcyLDE5ODc2ODYy
-OTUsMTE0NDU1NTE5MSwxNDcwMjAyNTA5LDExNDQ1NTUxOTEsLT
-UwODc3NDc1MSwzODM2NDMxMjddfQ==
+eyJoaXN0b3J5IjpbLTc4Mjk0ODgxOCwtMjA4MDUwNTEwMSwxMD
+gxNjQ2MzYwLDg0ODA4ODA3MSwzNTU0MjkyMTEsLTE3MjA3ODY4
+NzIsMTk4NzY4NjI5NSwxMTQ0NTU1MTkxLDE0NzAyMDI1MDksMT
+E0NDU1NTE5MSwtNTA4Nzc0NzUxLDM4MzY0MzEyN119
 -->
