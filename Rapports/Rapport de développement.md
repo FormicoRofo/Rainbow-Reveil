@@ -34,7 +34,6 @@ typedef struct {
     Pixel* pixels;
 } Canvas;
 ```
-# test
 
 #### Superposition de Chiffres sur le Canevas :
 
@@ -469,9 +468,9 @@ Aujourd'hui le principal travail de la journée, en collaboration avec Eden, a �
 ### Journal de Développement - 05.11.2023
 Après une semaine et deux jours d'absence maladie, je suis de retour. Le module touche à sa fin. Je me concentre donc sur la finalisation du rapport. Comme demandé, j'ai crée un Structogramme de la bibliothèque ws2812, et j'ai généré le rapport de configuration hardware du STM32. Ces deux documents se trouvent dans le même dossier que ce document (en version informatique) ou en annexes (en version papier). Il est conseillé de consulter la version informatique car les commentaires du Structogramme ne sont pas accessibles sur la version papier.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI0MDE0NzIzLDEwMzY2MDAwMDIsLTIwOD
-A1MDUxMDEsMTA4MTY0NjM2MCw4NDgwODgwNzEsMzU1NDI5MjEx
-LC0xNzIwNzg2ODcyLDE5ODc2ODYyOTUsMTE0NDU1NTE5MSwxND
-cwMjAyNTA5LDExNDQ1NTUxOTEsLTUwODc3NDc1MSwzODM2NDMx
-MjddfQ==
+eyJoaXN0b3J5IjpbMTAzNjYwMDAwMiw4MjQwMTQ3MjMsMTAzNj
+YwMDAwMiwtMjA4MDUwNTEwMSwxMDgxNjQ2MzYwLDg0ODA4ODA3
+MSwzNTU0MjkyMTEsLTE3MjA3ODY4NzIsMTk4NzY4NjI5NSwxMT
+Q0NTU1MTkxLDE0NzAyMDI1MDksMTE0NDU1NTE5MSwtNTA4Nzc0
+NzUxLDM4MzY0MzEyN119
 -->
