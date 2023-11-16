@@ -472,7 +472,7 @@ Aujourd'hui le principal travail de la journée, en collaboration avec Eden, a �
 Après une semaine et deux jours d'absence maladie, je suis de retour. Le module touche à sa fin. Je me concentre donc sur la finalisation du rapport. Comme demandé, j'ai crée un Structogramme de la bibliothèque ws2812, et j'ai généré le rapport de configuration hardware du STM32. Ces deux documents se trouvent dans le même dossier que ce document (en version informatique) ou en annexes (en version papier). Il est conseillé de consulter la version informatique car les commentaires du Structogramme ne sont pas accessibles sur la version papier.
 
 ## Conclusion
-Ce projet de programmation de l'affichage a été très enrichissant, et malgré le cours temps de développement, un grand succès. Il m'a permis de mieux comprendre comment fonctionne la gestion des images, leur compression et leur gestion sur un moteur de rendu. Il m'a également permis une meilleure compréhension et 
+Ce projet de programmation de l'affichage a été très enrichissant, et malgré le cours temps de développement, un grand succès. Il m'a permis de mieux comprendre comment fonctionne la gestion des images, leur compression et leur gestion sur un moteur de rendu. Il m'a également permis une meilleure compréhension et capacité à appréhender un projet de développement.
 
 
 ## Annexes
@@ -484,7 +484,7 @@ Ce projet de programmation de l'affichage a été très enrichissant, et malgré
  5. Journal de travail [1404.3100.00]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzQ4MjI4ODgsLTYyNTgxMTExLC0zMz
+eyJoaXN0b3J5IjpbLTE2NzQ1NzQ0NTAsLTYyNTgxMTExLC0zMz
 gzMTY0NzYsLTE1NTU1NDQ2MjIsMTY2MTIxOTU1MiwxMDM4MTgz
 Mjk1LDM1NzM0Mzg1LC0yMDI3ODY4MjU4LC0zMjY3NDkwMzYsLT
 gxOTQwNDA0OCwzOTk5ODk3MTYsMTAzNjYwMDAwMiwzOTk5ODk3
