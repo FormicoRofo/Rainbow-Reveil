@@ -477,14 +477,15 @@ Après une semaine et deux jours d'absence maladie, je suis de retour. Le module
  1. Rapport de configuration Hardware [1404.3501.00]
  2. Structogramme de la bibliothèque ws2812 [1404.2000.00]
  3. Parties importantes du code du projet [1404.2100.00]
- 4. Planification [1404.3800]
+ 4. Planification [1404.3600.00]
+ 5. Journal de travail [1404.3100.00]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzODMxNjQ3NiwtMTU1NTU0NDYyMiwxNj
-YxMjE5NTUyLDEwMzgxODMyOTUsMzU3MzQzODUsLTIwMjc4Njgy
-NTgsLTMyNjc0OTAzNiwtODE5NDA0MDQ4LDM5OTk4OTcxNiwxMD
-M2NjAwMDAyLDM5OTk4OTcxNiwxMDM2NjAwMDAyLDgyNDAxNDcy
-MywxMDM2NjAwMDAyLC0yMDgwNTA1MTAxLDEwODE2NDYzNjAsOD
-Q4MDg4MDcxLDM1NTQyOTIxMSwtMTcyMDc4Njg3MiwxOTg3Njg2
-Mjk1XX0=
+eyJoaXN0b3J5IjpbLTYyNTgxMTExLC0zMzgzMTY0NzYsLTE1NT
+U1NDQ2MjIsMTY2MTIxOTU1MiwxMDM4MTgzMjk1LDM1NzM0Mzg1
+LC0yMDI3ODY4MjU4LC0zMjY3NDkwMzYsLTgxOTQwNDA0OCwzOT
+k5ODk3MTYsMTAzNjYwMDAwMiwzOTk5ODk3MTYsMTAzNjYwMDAw
+Miw4MjQwMTQ3MjMsMTAzNjYwMDAwMiwtMjA4MDUwNTEwMSwxMD
+gxNjQ2MzYwLDg0ODA4ODA3MSwzNTU0MjkyMTEsLTE3MjA3ODY4
+NzJdfQ==
 -->
