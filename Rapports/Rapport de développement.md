@@ -1,9 +1,11 @@
 # Journal de développement réveil 
+Document 1404.3500.00
+
 ## Design général
 L'objectif est de créer un affichage à fond arc-en-ciel flou (pas de palette prédéfinie) défilante diagonale, pour donner une esthétique similaire aux périphériques RGB.  
 ![Clavier arc-en-ciel](https://media.tenor.com/9Gp-SBjrjj4AAAAC/rgb-keyboard-neon-lights.gif)   
 Ensuite, sur ce fond arc-en-ciel, l'idée est d'afficher l'heure de manière assez standard, soit en noir, soit en blanc, selon ce qui se voit le mieux et est le plus esthétique.
-## Structure générale
+### Structure générale
 ```mermaid
 graph LR
 subgraph uCa[uC affichage]
@@ -325,7 +327,6 @@ void displayBCD(Canvas* canvas, int X, int Y, int BCD, int NbDeBitAffiches) {
         }
 }
 ```
-
 #### Affichage d'images
 Sans doutes la fonction la plus polyvalente du lot, elle permet d'afficher une image sur le canvas à un endroit désiré. Il est également possible de placer une image que partiellement sur le canvas.
 
@@ -382,7 +383,7 @@ void drawImage(ImageData* imageData, int x, int y, Canvas* canvas) {
     }
 }
 ```
-
+## Gestion de l'ADC et de la réception UART
 ### Journal de Développement - 01.11.2023
 #### ADC
 Aujourd'hui j'ai intégré l'ADC et la photodiode à mon projet. J'ai implémenté une nouvelle bibliothèque qui me permet de facilement prendre des mesures de luminosité.
@@ -458,9 +459,36 @@ Il a été envisagé par la classe de changer de plateforme pour avoir plus de R
 
 #### Réparation de la carte commande
 Après une mesure à l'oscilloscope, la probable panne de ma carte commande semble avoir été trouvée. Cependant, une fois le composant remplacé (sa sortie se comporte comme attendue, le bus i2c est maintenant silencieux, et l'écran ne fonctionne plus. Il semblerait que j'ai endommagé le microcontrôleur. Peut-être que reflasher le programme résoudra le problème ?
+
+
+## Portage sur L432KC
+### Journal de Développement - 03.11.2023
+Aujourd'hui le principal travail de la journée, en collaboration avec Eden, a été le portage du projet sur un nouveau Nucléo (le L432KC) pour bénéficier de plus de mémoire et de RAM. J'ai appris à Eden à utiliser GitHub et GitKraken (débutant moi même), mais nous avons fini par les deux avoir un dépôt fonctionnel, le sien étant un fork du mien, mais ayant merge ensuite le sien dans le mien.
+
+![Diagramme des Commit et merge entre Eden et moi](https://i.ibb.co/N2CmkP4/image.png)
+
+
+### Journal de Développement - 05.11.2023
+Après une semaine et deux jours d'absence maladie, je suis de retour. Le module touche à sa fin. Je me concentre donc sur la finalisation du rapport. Comme demandé, j'ai crée un Structogramme de la bibliothèque ws2812, et j'ai généré le rapport de configuration hardware du STM32. Ces deux documents se trouvent dans le même dossier que ce document (en version informatique) ou en annexes (en version papier). Il est conseillé de consulter la version informatique car les commentaires du Structogramme ne sont pas accessibles sur la version papier.
+
+## Conclusion
+Ce projet de programmation de l'affichage a été très enrichissant, et malgré le cours temps de développement, un grand succès. Il m'a permis de mieux comprendre comment fonctionne la gestion des images, leur compression et leur gestion sur un moteur de rendu. Il m'a également permis une meilleure compréhension et capacité à appréhender un projet de développement.
+
+
+## Annexes
+
+ 1. Rapport de configuration Hardware [1404.3501.00]
+ 2. Structogramme de la bibliothèque ws2812 [1404.2000.00]
+ 3. Parties importantes du code du projet [1404.2100.00]
+ 4. Planification [1404.3600.00]
+ 5. Journal de travail [1404.3100.00]
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODA1MDUxMDEsMTA4MTY0NjM2MCw4ND
-gwODgwNzEsMzU1NDI5MjExLC0xNzIwNzg2ODcyLDE5ODc2ODYy
-OTUsMTE0NDU1NTE5MSwxNDcwMjAyNTA5LDExNDQ1NTUxOTEsLT
-UwODc3NDc1MSwzODM2NDMxMjddfQ==
+eyJoaXN0b3J5IjpbLTE2NzQ1NzQ0NTAsLTYyNTgxMTExLC0zMz
+gzMTY0NzYsLTE1NTU1NDQ2MjIsMTY2MTIxOTU1MiwxMDM4MTgz
+Mjk1LDM1NzM0Mzg1LC0yMDI3ODY4MjU4LC0zMjY3NDkwMzYsLT
+gxOTQwNDA0OCwzOTk5ODk3MTYsMTAzNjYwMDAwMiwzOTk5ODk3
+MTYsMTAzNjYwMDAwMiw4MjQwMTQ3MjMsMTAzNjYwMDAwMiwtMj
+A4MDUwNTEwMSwxMDgxNjQ2MzYwLDg0ODA4ODA3MSwzNTU0Mjky
+MTFdfQ==
 -->
