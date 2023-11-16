@@ -475,10 +475,10 @@ Après une semaine et deux jours d'absence maladie, je suis de retour. Le module
 ## Annexes
 
  1. Rapport de configuration Hardware [1404.3501.00]
- 2. 
+ 2. Structogramme de la bibliothèque 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MTU5NzM4MiwxNjYxMjE5NTUyLDEwMz
+eyJoaXN0b3J5IjpbMTYyMDUwMjEyOSwxNjYxMjE5NTUyLDEwMz
 gxODMyOTUsMzU3MzQzODUsLTIwMjc4NjgyNTgsLTMyNjc0OTAz
 NiwtODE5NDA0MDQ4LDM5OTk4OTcxNiwxMDM2NjAwMDAyLDM5OT
 k4OTcxNiwxMDM2NjAwMDAyLDgyNDAxNDcyMywxMDM2NjAwMDAy
