@@ -467,10 +467,13 @@ Aujourd'hui le principal travail de la journée, en collaboration avec Eden, a �
 
 ![Diagramme des Commit et merge entre Eden et moi](https://i.ibb.co/N2CmkP4/image.png)
 
- ## Conclusion
 
 ### Journal de Développement - 05.11.2023
 Après une semaine et deux jours d'absence maladie, je suis de retour. Le module touche à sa fin. Je me concentre donc sur la finalisation du rapport. Comme demandé, j'ai crée un Structogramme de la bibliothèque ws2812, et j'ai généré le rapport de configuration hardware du STM32. Ces deux documents se trouvent dans le même dossier que ce document (en version informatique) ou en annexes (en version papier). Il est conseillé de consulter la version informatique car les commentaires du Structogramme ne sont pas accessibles sur la version papier.
+
+## Conclusion
+Ce projet de programmation de l'affichage a été très enrichissant, et malgrès le cours temps
+
 
 ## Annexes
 
@@ -481,11 +484,11 @@ Après une semaine et deux jours d'absence maladie, je suis de retour. Le module
  5. Journal de travail [1404.3100.00]
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNTgxMTExLC0zMzgzMTY0NzYsLTE1NT
-U1NDQ2MjIsMTY2MTIxOTU1MiwxMDM4MTgzMjk1LDM1NzM0Mzg1
-LC0yMDI3ODY4MjU4LC0zMjY3NDkwMzYsLTgxOTQwNDA0OCwzOT
-k5ODk3MTYsMTAzNjYwMDAwMiwzOTk5ODk3MTYsMTAzNjYwMDAw
-Miw4MjQwMTQ3MjMsMTAzNjYwMDAwMiwtMjA4MDUwNTEwMSwxMD
-gxNjQ2MzYwLDg0ODA4ODA3MSwzNTU0MjkyMTEsLTE3MjA3ODY4
-NzJdfQ==
+eyJoaXN0b3J5IjpbLTE0NDYwMDExMDIsLTYyNTgxMTExLC0zMz
+gzMTY0NzYsLTE1NTU1NDQ2MjIsMTY2MTIxOTU1MiwxMDM4MTgz
+Mjk1LDM1NzM0Mzg1LC0yMDI3ODY4MjU4LC0zMjY3NDkwMzYsLT
+gxOTQwNDA0OCwzOTk5ODk3MTYsMTAzNjYwMDAwMiwzOTk5ODk3
+MTYsMTAzNjYwMDAwMiw4MjQwMTQ3MjMsMTAzNjYwMDAwMiwtMj
+A4MDUwNTEwMSwxMDgxNjQ2MzYwLDg0ODA4ODA3MSwzNTU0Mjky
+MTFdfQ==
 -->
