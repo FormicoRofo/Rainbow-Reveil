@@ -475,14 +475,15 @@ Après une semaine et deux jours d'absence maladie, je suis de retour. Le module
 ## Annexes
 
  1. Rapport de configuration Hardware [1404.3501.00]
- 2. Structogramme de la bibliothèque 
+ 2. Structogramme de la bibliothèque ws2812 [1404.2000.00]
+ 3. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMDUwMjEyOSwxNjYxMjE5NTUyLDEwMz
-gxODMyOTUsMzU3MzQzODUsLTIwMjc4NjgyNTgsLTMyNjc0OTAz
-NiwtODE5NDA0MDQ4LDM5OTk4OTcxNiwxMDM2NjAwMDAyLDM5OT
-k4OTcxNiwxMDM2NjAwMDAyLDgyNDAxNDcyMywxMDM2NjAwMDAy
-LC0yMDgwNTA1MTAxLDEwODE2NDYzNjAsODQ4MDg4MDcxLDM1NT
-QyOTIxMSwtMTcyMDc4Njg3MiwxOTg3Njg2Mjk1LDExNDQ1NTUx
-OTFdfQ==
+eyJoaXN0b3J5IjpbLTE1NTU1NDQ2MjIsMTY2MTIxOTU1MiwxMD
+M4MTgzMjk1LDM1NzM0Mzg1LC0yMDI3ODY4MjU4LC0zMjY3NDkw
+MzYsLTgxOTQwNDA0OCwzOTk5ODk3MTYsMTAzNjYwMDAwMiwzOT
+k5ODk3MTYsMTAzNjYwMDAwMiw4MjQwMTQ3MjMsMTAzNjYwMDAw
+MiwtMjA4MDUwNTEwMSwxMDgxNjQ2MzYwLDg0ODA4ODA3MSwzNT
+U0MjkyMTEsLTE3MjA3ODY4NzIsMTk4NzY4NjI5NSwxMTQ0NTU1
+MTkxXX0=
 -->
